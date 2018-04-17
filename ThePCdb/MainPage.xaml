@@ -7,7 +7,13 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock Text="MainPage"/>
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF101623" Offset="0.048"/>
+                <GradientStop Color="#FF1452D6" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBlock Foreground="White" FontSize="60" Text="Main Screen" HorizontalAlignment="Center"/>
     </Grid>
 </Page>
