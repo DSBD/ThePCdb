@@ -16,7 +16,7 @@
         </Grid.Background>
         <Grid Margin="15" HorizontalAlignment="Center">
             <Grid.RowDefinitions>
-                <RowDefinition Height="auto"/>
+                <RowDefinition Height="Auto"/>
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
