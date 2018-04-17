@@ -112,9 +112,11 @@
   <ItemGroup>
     <Content Include="Assets\BrowseLogo.png" />
     <Content Include="Assets\BuildLogo.png" />
+    <Content Include="Assets\BuildLogo2.png" />
     <Content Include="Assets\Logo_Can_3_White.png" />
     <Content Include="Assets\Logo_Can_3.png" />
     <Content Include="Assets\ReccomendedLogo.png" />
+    <Content Include="Assets\ReccomendedLogo2.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
