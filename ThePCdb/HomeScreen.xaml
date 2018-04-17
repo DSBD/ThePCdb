@@ -29,11 +29,11 @@
             <Image Source="Assets/Logo_Can_3_White.png" Height="75" Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
             <TextBlock Text="THEPCDB" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontSize="48"/>
 
-            <Button Grid.Row="1" Grid.Column="1" Content="Custom Build" Foreground="White" FontSize="24" Width="225" Height="100"/>
+            <Button Grid.Row="1" Grid.Column="1" Content="Custom Build" Foreground="White" FontSize="24" Width="225" Height="100" Click="CBuild_Click"/>
             <Image Grid.Row="1" Source="Assets/BuildLogo2.png" Height="75" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            <Button Grid.Row="2" Grid.Column="1" Content="Recommend Build" Foreground="White" FontSize="24" Width="225" Height="100"/>
+            <Button Grid.Row="2" Grid.Column="1" Content="Recommend Build" Foreground="White" FontSize="24" Width="225" Height="100" Click="RBuild_Click"/>
             <Image Grid.Row="2" Source="Assets/ReccomendedLogo2.png" Height="85" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            <Button Grid.Row="3" Grid.Column="1" Content="Browse Parts" Foreground="White" FontSize="24" Width="225" Height="100"/>
+            <Button Grid.Row="3" Grid.Column="1" Content="Browse Parts" Foreground="White" FontSize="24" Width="225" Height="100" Click="Browse_Click"/>
             <Image Grid.Row="3" Source="Assets/BrowseLogo.png" Height="75" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
             <Button Grid.Row="4" Grid.ColumnSpan="2" Content="Exit" Foreground="White" FontSize="24" Width="250" Height="100" HorizontalAlignment="Center" Click="Button_Click"/>
