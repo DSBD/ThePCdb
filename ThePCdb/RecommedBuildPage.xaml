@@ -14,7 +14,7 @@
                 <GradientStop Color="#FF1452D6" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBlock Foreground="White" FontSize="54" Text="Recomed. Build" HorizontalAlignment="Center"/>
+        <TextBlock Foreground="White" FontSize="54" Text="Recommend Build" HorizontalAlignment="Center"/>
         <Button Grid.Row="4" Grid.ColumnSpan="2" Content="Back" Foreground="White" FontSize="24" Width="250" Height="100" HorizontalAlignment="Center" Click="Button_Click"/>
     </Grid>
 </Page>
