@@ -106,6 +106,7 @@
     <Compile Include="Components\MotherboardPart.cs" />
     <Compile Include="Components\Part.cs" />
     <Compile Include="Components\PSUPart.cs" />
+    <Compile Include="Components\RAMPart.cs" />
     <Compile Include="Components\StoragePart.cs" />
     <Compile Include="CustomBuildPage.xaml.cs">
       <DependentUpon>CustomBuildPage.xaml</DependentUpon>
