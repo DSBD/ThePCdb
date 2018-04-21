@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace ThePCdb.Components
 {
-    class CoolingPart : Part
+    public class CoolingPart : Part
     {
         protected string CoolerType { get; set; }
-        public List<CPUPart.Socket> Compatability { get; set; }
+        protected List<CPUPart.Socket> Compatability { get; set; }
 
         public CoolingPart(string name, double price, int rating, string type, string ipid, string ctype, List<CPUPart.Socket> compList) : base(name, price, rating, type, ipid)
         {
