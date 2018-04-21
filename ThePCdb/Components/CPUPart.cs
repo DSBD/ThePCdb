@@ -17,7 +17,7 @@ namespace ThePCdb.Components
            AM4,
            sTR4
         }
-        public enum ChipsetCompat
+        public enum Chipset
         {
             X299,
             Z27,
@@ -25,10 +25,10 @@ namespace ThePCdb.Components
             X399
         }
         protected Socket SocketType { get; set; }
-        protected ChipsetCompat ChipsetCompatability { get; set; }
+        protected Chipset ChipsetCompatability { get; set; }
         protected int CineBenchScore { get; set; }
 
-        public CPUPart(string name, double price, int rating, string type, int corecount, double freq, Socket soc, ChipsetCompat chip, int cine, string ID) : base(name, price, rating, type, ID)
+        public CPUPart(string name, double price, int rating, string type, int corecount, double freq, Socket soc, Chipset chip, int cine, string ID) : base(name, price, rating, type, ID)
         {
             CoreCount = corecount;
             Frequency = freq;
