@@ -12,13 +12,15 @@ namespace ThePCdb.Components
         protected double Price { get; set; }
         protected int Rating { get; set; }
         protected string Type { get; set; }
+        public string InternalPartID { get; set; }
 
-        public Part(string name, double price, int rating, string type)
+        public Part(string name, double price, int rating, string type, string IPID)
         {
             Name = name;
             Price = price;
             Rating = rating;
             Type = type;
+            InternalPartID = IPID;
         }
     }
 }
