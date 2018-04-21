@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ThePCdb.Components
 {
-    class GPUPart : Part
+   public class GPUPart : Part
     {
         protected int CoreFrequency { get; set; }
         protected int BoostFrequency { get; set; }

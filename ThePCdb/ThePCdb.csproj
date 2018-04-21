@@ -102,6 +102,7 @@
     <Compile Include="Components\CoolingPart.cs" />
     <Compile Include="Components\CPUPart.cs" />
     <Compile Include="Components\GPUPart.cs" />
+    <Compile Include="Components\MotherboardPart.cs" />
     <Compile Include="Components\Part.cs" />
     <Compile Include="Components\StoragePart.cs" />
     <Compile Include="CustomBuildPage.xaml.cs">
