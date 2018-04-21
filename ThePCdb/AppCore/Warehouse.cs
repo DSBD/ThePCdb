@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ThePCdb.AppCore
 {
-    static class Warehouse
+    public static class Warehouse
     {
         //TODO: Store All Components
         //TODO: Program to Access Component Details by Category
