@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ThePCdb.Components
 {
-    class CPUPart : Part
+    public class CPUPart : Part
     {
         protected int CoreCount { get; set; }
         protected double Frequency { get; set; }
@@ -24,8 +24,8 @@ namespace ThePCdb.Components
             X470,
             X399
         }
-        protected Socket SocketType { get; set; }
-        protected Chipset ChipsetCompatability { get; set; }
+        public Socket SocketType { get; set; }
+        public Chipset ChipsetCompatability { get; set; }
         protected int CineBenchScore { get; set; }
 
         public CPUPart(string name, double price, int rating, string type, int corecount, double freq, Socket soc, Chipset chip, int cine, string ID) : base(name, price, rating, type, ID)
