@@ -23,12 +23,6 @@ namespace ThePCdb.Components
             OverClockable = overclock;
             Socket = soc;
             chipSetCompatibility = chip;
-
-
         }
-
-
-
-
     }
 }
