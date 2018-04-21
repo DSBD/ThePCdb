@@ -100,6 +100,7 @@
       <DependentUpon>BrowsePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Components\CPUPart.cs" />
+    <Compile Include="Components\GPUPart.cs" />
     <Compile Include="Components\Part.cs" />
     <Compile Include="CustomBuildPage.xaml.cs">
       <DependentUpon>CustomBuildPage.xaml</DependentUpon>
