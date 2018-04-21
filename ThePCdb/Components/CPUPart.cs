@@ -24,20 +24,17 @@ namespace ThePCdb.Components
             X470,
             X399
         }
-        public Socket socketType { get; set; }
-        public ChipsetCompat chipsetCompatability { get; set; }
+        protected Socket SocketType { get; set; }
+        protected ChipsetCompat ChipsetCompatability { get; set; }
         protected int CineBenchScore { get; set; }
 
         public CPUPart(string name, double price, int rating, string type, int corecount, double freq, Socket soc, ChipsetCompat chip, int cine, string ID) : base(name, price, rating, type, ID)
         {
             CoreCount = corecount;
             Frequency = freq;
-            socketType = soc;
-            chipsetCompatability = chip;
+            SocketType = soc;
+            ChipsetCompatability = chip;
             CineBenchScore = cine;
-
         }
-
-
     }
 }
