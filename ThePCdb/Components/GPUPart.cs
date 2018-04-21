@@ -20,7 +20,5 @@ namespace ThePCdb.Components
             VRAM = vram;
             ThreeDMarkScore = threed;
         }
-
-
     }
 }
