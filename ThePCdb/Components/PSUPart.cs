@@ -22,7 +22,6 @@ namespace ThePCdb.Components
         public enum EightyPlus
         {
             Bronze,
-            Silver,
             Gold,
             Platinum,
             Titanium
