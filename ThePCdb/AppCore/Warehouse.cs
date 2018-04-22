@@ -16,10 +16,13 @@ namespace ThePCdb.AppCore
         static public List<Components.CPUPart> CPUList { get; set; }
         static public List<Components.MotherboardPart> MotherboardList { get; set; }
         static public List<Components.RAMPart> RAMLIST { get; set; }
+        static public List<Components.CoolingPart> CoolingList { get; set; }
+        
         static Warehouse()
         {
             LoadCPU();
             loadMotherboards();
+            loadRAM();
         }
         public static void LoadCPU()
         {
@@ -170,6 +173,35 @@ namespace ThePCdb.AppCore
             RAMLIST.Add(new Components.RAMPart("Team T-Force DARK 16GB (2 x 8)", 222.99, 0, "RAM", "533002", "DDR4", 16, 3000));
             RAMLIST.Add(new Components.RAMPart("Team T-Force Vulcan 16GB (2 x 8)", 214.99, 0, "RAM", "533003", "DDR4", 16, 3000));
             //END OF Ram list
+        }
+        public static void loadCooling()
+        {
+
+            CoolingList.Add(new Components.CoolingPart("Cooler Master RR-HD92-28PK-R1", 57.99, 0, "Cooling", "711001", "Air", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4}));
+            CoolingList.Add(new Components.CoolingPart("Cooler Master Hyper 212 EVO", 44.99, 0, "Cooling", "711002", "Air", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
+            CoolingList.Add(new Components.CoolingPart("Cooler Master Hyper 212 LED", 49.99, 0, "Cooling", "711003", "Air", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
+            CoolingList.Add(new Components.CoolingPart("Cooler Master Hyper 212X", 59.99, 0, "Cooling", "711004", "Air", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
+            CoolingList.Add(new Components.CoolingPart("Cooler Master MasterAirMA410P RGB", 44.99, 0, "Cooling", "711005", "Air", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
+            CoolingList.Add(new Components.CoolingPart("Cooler Master MasterAir MA610P", 54.99, 0, "Cooling", "711006", "Air", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
+            CoolingList.Add(new Components.CoolingPart("Cooler Master MasterAir Maker 8", 179.99, 0, "Cooling", "711007", "Air", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
+            CoolingList.Add(new Components.CoolingPart("Cooler Master MasterAir MA620P", 79.99, 0, "Cooling", "711008", "Air", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
+            CoolingList.Add(new Components.CoolingPart("Cooler Master MasterLiqUid ML240R", 159.99, 0, "Cooling", "712001", "AIO", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
+            CoolingList.Add(new Components.CoolingPart("Cooler Master MasterLiquid lite 240", 75.99, 0, "Cooling", "712002", "AIO", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
+            CoolingList.Add(new Components.CoolingPart("Cooler Master MasterLiquid lite ML240L RGB", 84.99, 0, "Cooling", "712003", "AIO", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
+            CoolingList.Add(new Components.CoolingPart("Cooler Master MasterLiquid Lite ML120L RGB", 79.99, 0, "Cooling", "7120043", "AIO", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
+            CoolingList.Add(new Components.CoolingPart("Cooler Master MasterLiquid ML120R", 129.99, 0, "Cooling", "712005", "AIO", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
+            CoolingList.Add(new Components.CoolingPart("Cooler Master HydroSeries H100i V2", 149.99, 0, "Cooling", "722001", "AIO", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
+            CoolingList.Add(new Components.CoolingPart("Cooler Master HydroSeries H150i PRO RGB", 214.99, 0, "Cooling", "722002", "AIO", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
+            CoolingList.Add(new Components.CoolingPart("Cooler Master HydroSeries H115i PRO RGB", 179.99, 0, "Cooling", "722003", "AIO", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
+            CoolingList.Add(new Components.CoolingPart("Fractal Design Celsius S24", 159.99, 0, "Cooling", "732001", "AIO", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4, Components.CPUPart.Socket.sTR4}));
+            CoolingList.Add(new Components.CoolingPart("NZXT Kraken X62", 219.99, 0, "Cooling", "742001", "AIO", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4, Components.CPUPart.Socket.sTR4 }));
+            CoolingList.Add(new Components.CoolingPart("NZXT Kraken X52", 189.99, 0, "Cooling", "742002", "AIO", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4, Components.CPUPart.Socket.sTR4 }));
+            CoolingList.Add(new Components.CoolingPart("Noctua NH-U95", 69.99, 0, "Cooling", "751001", "Air", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
+            CoolingList.Add(new Components.CoolingPart("Noctua NH-D15 SSo2 D-Type", 99.99, 0, "Cooling", "751002", "Air", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
+            CoolingList.Add(new Components.CoolingPart("Noctua NH-U12S", 84.99, 0, "Cooling", "751003", "Air", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
+            CoolingList.Add(new Components.CoolingPart("Noctua NH-U9 TR4-SP3", 89.99, 0, "Cooling", "751004", "Air", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.sTR4 }));
+            CoolingList.Add(new Components.CoolingPart("Noctua NH-U14S TR4-Sp3", 99.99, 0, "Cooling", "751005", "Air", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.sTR4 }));
+            //END OF COOLINg
         }
     }
 }
