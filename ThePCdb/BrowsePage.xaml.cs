@@ -31,12 +31,9 @@ namespace ThePCdb
             this.InitializeComponent();
             foreach (CPUPart CPU in CPUList)
             {
-                PartBox.Items.Add(CPU);
+                CPUBox.Items.Add(CPU);
             }
         }
-
-
-
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
