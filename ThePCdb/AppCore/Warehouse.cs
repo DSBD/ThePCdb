@@ -17,7 +17,7 @@ namespace ThePCdb.AppCore
         static public List<Components.MotherboardPart> MotherboardList { get; set; }
         static Warehouse()
         {
-
+            LoadCPU();
         }
         public static void LoadCPU()
         {
