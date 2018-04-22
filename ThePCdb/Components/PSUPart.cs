@@ -10,11 +10,22 @@ namespace ThePCdb.Components
     {
         protected string FormFactor { get; set; }
         protected int Wattage { get; set; }
+        protected EightyPlus EPRating { get; set; }
 
-        public PSUPart(string name, double price, int rating, string type, string ipid, string ffactor, int wattage) : base(name, price, rating, type, ipid)
+        public PSUPart(string name, double price, int rating, string type, string ipid, string ffactor, int wattage, EightyPlus epRating) : base(name, price, rating, type, ipid)
         {
             FormFactor = ffactor;
             Wattage = wattage;
+            EPRating = epRating;
+        }
+
+        public enum EightyPlus
+        {
+            Bronze,
+            Silver,
+            Gold,
+            Platinum,
+            Titanium
         }
     }
 }
