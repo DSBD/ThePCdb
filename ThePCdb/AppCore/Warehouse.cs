@@ -17,12 +17,16 @@ namespace ThePCdb.AppCore
         static public List<Components.MotherboardPart> MotherboardList { get; set; }
         static public List<Components.RAMPart> RAMLIST { get; set; }
         static public List<Components.CoolingPart> CoolingList { get; set; }
+
+        static public List<Components.CasePart> CaseList { get; set; }
         
         static Warehouse()
         {
             LoadCPU();
             loadMotherboards();
             loadRAM();
+            loadCooling();
+            loadCase();
         }
         public static void LoadCPU()
         {
@@ -176,7 +180,6 @@ namespace ThePCdb.AppCore
         }
         public static void loadCooling()
         {
-
             CoolingList.Add(new Components.CoolingPart("Cooler Master RR-HD92-28PK-R1", 57.99, 0, "Cooling", "711001", "Air", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4}));
             CoolingList.Add(new Components.CoolingPart("Cooler Master Hyper 212 EVO", 44.99, 0, "Cooling", "711002", "Air", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
             CoolingList.Add(new Components.CoolingPart("Cooler Master Hyper 212 LED", 49.99, 0, "Cooling", "711003", "Air", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
@@ -203,5 +206,29 @@ namespace ThePCdb.AppCore
             CoolingList.Add(new Components.CoolingPart("Noctua NH-U14S TR4-Sp3", 99.99, 0, "Cooling", "751005", "Air", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.sTR4 }));
             //END OF COOLINg
         }
+        public static void loadCase()
+        {
+            CaseList.Add(new Components.CasePart("NZXT S349 Elite Matte White Steal", 139.99, 0, "Case", "611001", "ATX", 5, 7, true, true, true));
+            CaseList.Add(new Components.CasePart("NZXT S340 Elite Matte Black Steal", 99.99, 0, "Case", "611002", "ATX", 4, 7, true, true, true));
+            CaseList.Add(new Components.CasePart("NZXT S340 Elite Glossy White Steal", 99.99, 0, "Case", "611003", "ATX", 4, 7, true, true, true));
+            CaseList.Add(new Components.CasePart("NZXT S340 Elite Matte Black Steal", 139.99, 0, "Case", "611004", "ATX", 5, 7, true, true, true));
+            CaseList.Add(new Components.CasePart("NZXT Noctis 450", 189.99, 0, "Case", "621005", "ATX", 8, 7, true, true, true));
+            CaseList.Add(new Components.CasePart("Fractal Design Meshify C - TG", 119.99, 0, "Case", "611005", "ATX", 5, 7, true, true, true));
+            CaseList.Add(new Components.CasePart("Fractal Design Meshify C Black", 119.99, 0, "Case", "621001", "ATX", 5, 7, true, true, true));
+            CaseList.Add(new Components.CasePart("Fractal Design Focis G", 74.99, 0, "Case", "621002", "ATX", 3, 7, true, true, true));
+            CaseList.Add(new Components.CasePart("Fractal Design Define R6 Black", 199.99, 0, "Case", "621003", "EATX", 8, 9, true, true, true));
+            CaseList.Add(new Components.CasePart("Fractal Design Define R6 Blackout", 199.99, 0, "Case", "621004", "EATX", 8, 9, true, true, true));
+            CaseList.Add(new Components.CasePart("Cooler Master MasterBox Lite 5 RGB", 89.99, 0, "Case", "631001", "ATX", 3, 7, true, true, true));
+            CaseList.Add(new Components.CasePart("Cooler Master MasterBox Lite 3.1", 59.99, 0, "Case", "633001", "mATX", 3, 4, true, true, true));
+            CaseList.Add(new Components.CasePart("Cooler Master MasterCase H500P", 199.99, 0, "Case", "631002", "EATX", 4, 9, true, true, true));
+            CaseList.Add(new Components.CasePart("Cooler Master MasterCaae H500P Mesh White", 194.99, 0, "Case", "631003", "EATX", 4, 9, true, true, true));
+            CaseList.Add(new Components.CasePart("Cooler Master MasterBox 5 Black", 99.99, 0, "Case", "631004", "ATX", 3, 7, true, true, true));
+            CaseList.Add(new Components.CasePart("Cooler Master N400 NSE", 79.99, 0, "Case", "631005", "EATX", 10, 7, false, false, true));
+            CaseList.Add(new Components.CasePart("Corsair Crystal 570X White", 229.99, 0, "Case", "641001", "ATX", 4, 7, true, true, true));
+            CaseList.Add(new Components.CasePart("Corsair Crystal Series 570X Black", 229.99, 0, "Case", "641002", "ATX", 4, 7, true, true, true));
+            CaseList.Add(new Components.CasePart("Corsair Obsidian 500D", 184.99, 0, "Case", "641003", "ATX", 5, 7, true, true, true));
+            CaseList.Add(new Components.CasePart("Corsair Carbide Series 275R", 99.99, 0, "Case", "641004", "ATX", 4, 7, true, true, true));
+            CaseList.Add(new Components.CasePart("Corsair Carbide series SPEC-OMEGA", 128.99, 0, "Case", "641005", "ATX", 4, 7, true, true, true));
+        }// END OF CASES
     }
 }
