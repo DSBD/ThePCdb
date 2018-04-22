@@ -15,9 +15,11 @@ namespace ThePCdb.AppCore
 
         static public List<Components.CPUPart> CPUList { get; set; }
         static public List<Components.MotherboardPart> MotherboardList { get; set; }
+        static public List<Components.RAMPart> RAMLIST { get; set; }
         static Warehouse()
         {
-
+            LoadCPU();
+            loadMotherboards();
         }
         public static void LoadCPU()
         {
@@ -116,14 +118,58 @@ namespace ThePCdb.AppCore
             MotherboardList.Add(new Components.MotherboardPart("Gigabyte GA-AX370 Gaming 5 AM4", 334.99, 0, "Motherboard", "223001", "ATX", 4, 3, true, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370));
             MotherboardList.Add(new Components.MotherboardPart("Gigabyte GA-AX370 Gaming K5 AM4", 242.99, 0, "Motherboard", "223002", "ATX", 4, 3, true, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370));
             MotherboardList.Add(new Components.MotherboardPart("Gigabyte AORUS GA-AX370 Gaming K7", 259.99, 0, "Motherboard", "223003", "ATX", 4, 3, true, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370));
-
-
-
-
-
-
-
-
+            //END OF MOTHERBOARD
+        }
+        public static void loadRAM()
+        {
+            RAMLIST.Add(new Components.RAMPart("Corsair Vengeance LPX 8GB (2 x 4GB)", 144.99, 0, "RAM", "511001", "DDR4", 8, 3000));
+            RAMLIST.Add(new Components.RAMPart("Corsair Dominator Platinum 8GB (2 x 4GB)", 292.99, 0, "RAM", "511002", "DDR4", 8, 4000));
+            RAMLIST.Add(new Components.RAMPart("Corsair Dominator Platinum 16GB ROG Sig", 329.99, 0, "RAM", "512001", "DDR4", 16, 3200));
+            RAMLIST.Add(new Components.RAMPart("Corsair Vengence LPX 16GB (4 x 4)", 289.99, 0, "RAM", "512002", "DDR4", 16, 3000));
+            RAMLIST.Add(new Components.RAMPart("Corsair Vengence LPX 16GB (2 x 8)", 269.99, 0, "RAM", "513001", "DDR4", 16, 3200));
+            RAMLIST.Add(new Components.RAMPart("Corsair Vengence LED 16GB (2 x 8)", 264.99, 0, "RAM", "513002", "DDR4", 16, 3000));
+            RAMLIST.Add(new Components.RAMPart("Corsair Vengence RGB 16GB (2 x 8)", 275.99, 0, "RAM", "513003", "DDR4", 16, 3200));
+            RAMLIST.Add(new Components.RAMPart("Corsair Vengence LPX 32GB (4 x 8)", 489.99, 0, "RAM", "514001", "DDR4", 32, 2666));
+            RAMLIST.Add(new Components.RAMPart("Corsair Vengence LED 32GB (4 x 8)", 519.99, 0, "RAM", "514002", "DDR4", 32, 3000));
+            RAMLIST.Add(new Components.RAMPart("Corsair Vengence RGB 32GB (4 x 8)", 549.99, 0, "RAM", "514003", "DDR4", 32, 3200));
+            RAMLIST.Add(new Components.RAMPart("Corsair Vengence LPX 64GB (8 x 8)", 1049.99, 0, "RAM", "515001", "DDR4", 64, 2666));
+            RAMLIST.Add(new Components.RAMPart("Corsair Vengence RGB 64GB (8 x 8)", 1019.99, 0, "RAM", "515002", "DDR4", 64, 2666));
+            RAMLIST.Add(new Components.RAMPart("Corsair Dominator Platinum 64GB (8 x 8)", 1299.99, 0, "RAM", "515003", "DDR4", 64, 3000));
+            RAMLIST.Add(new Components.RAMPart("Corsair Dominator Platinum 32GB (2 x 16)", 529.99, 0, "RAM", "516001", "DDR4", 32, 3000));
+            RAMLIST.Add(new Components.RAMPart("Corsair Vengence LPX 32GB (2 x 16)", 559.99, 0, "RAM", "516002", "DDR4", 32, 4000));
+            RAMLIST.Add(new Components.RAMPart("Corsair Vengence RGB 32GB (2 x 16)", 549.99, 0, "RAM", "516003", "DDR4", 32, 3200));
+            RAMLIST.Add(new Components.RAMPart("Corsair Vengence LED 32GB (2 x 16)", 519.99, 0, "RAM", "516004", "DDR4", 32, 3000));
+            RAMLIST.Add(new Components.RAMPart("Corsair Vengence RGB 64GB (4 x 16)",979.99, 0, "RAM", "517001", "DDR4", 64, 2666));
+            RAMLIST.Add(new Components.RAMPart("Corsair Vengence RGB 64GB (4 x 16)", 1119.99, 0, "RAM", "517002", "DDR4", 64, 3200));
+            RAMLIST.Add(new Components.RAMPart("Corsair Dominator Platinum 128GB (8 x 16)", 2279.99, 0, "RAM", "518001", "DDR4", 128, 3200));
+            RAMLIST.Add(new Components.RAMPart("Corsair Vengeance RGB 128GB (8 x 16)", 2219.99, 0, "RAM", "518002", "DDR4", 128, 3600));
+            RAMLIST.Add(new Components.RAMPart("G.Skill TridentZ Series 8GB (2 x 4)", 145.99, 0, "RAM", "521001", "DDR4", 8, 3000));
+            RAMLIST.Add(new Components.RAMPart("G.Skill Ripjaws V Series 8GB (2 x 4)", 148.99, 0, "RAM", "521002", "DDR4", 8, 3600));
+            RAMLIST.Add(new Components.RAMPart("G.Skill Aegis 8GB (2 x 4)", 111.99, 0, "RAM", "521003", "DDR4", 8, 2400));
+            RAMLIST.Add(new Components.RAMPart("G.Skill Ripjaws V Series 16GB (4 x 4)", 272.99, 0, "RAM", "522001", "DDR4", 16, 3200));
+            RAMLIST.Add(new Components.RAMPart("G.Skill Ripjaws 4 Series 16GB (4 x 4)", 236.99, 0, "RAM", "522002", "DDR4", 16, 2666));
+            RAMLIST.Add(new Components.RAMPart("G.Skill TridentZ Series 16GB (4 x 4)", 296.99, 0, "RAM", "522003", "DDR4", 16, 3200));
+            RAMLIST.Add(new Components.RAMPart("G.Skill Ripjaws V Series 16GB (2 x 8)", 232.99, 0, "RAM", "523001", "DDR4", 16, 3000));
+            RAMLIST.Add(new Components.RAMPart("G.Skill TridentZ RGB Series 16GB (2 x 8)", 262.99, 0, "RAM", "523002", "DDR4", 16, 3000));
+            RAMLIST.Add(new Components.RAMPart("G.Skill Flare X Series 16GB (2 x 8)", 306.99, 0, "RAM", "523003", "DDR4", 16, 3200));
+            RAMLIST.Add(new Components.RAMPart("G.Skill TridentZ RGB Series 32GB (4 x 8)", 524.99, 0, "RAM", "524001", "DDR4", 32, 3000));
+            RAMLIST.Add(new Components.RAMPart("G.Skill TridentZ Series 32GB (4 x 8)", 749.99, 0, "RAM", "524002", "DDR4", 32, 4000));
+            RAMLIST.Add(new Components.RAMPart("G.Skill Flare X Series 32GB (4 x 8)", 609.99, 0, "RAM", "524003", "DDR4", 32, 3200));
+            RAMLIST.Add(new Components.RAMPart("G.Skill TridentZ RGB Series 64GB (8 x 8)", 1499.99, 0, "RAM", "525001", "DDR4", 64, 3733));
+            RAMLIST.Add(new Components.RAMPart("G.Skill Ripjaws V Series 64GB (8 x 8)", 1059.99, 0, "RAM", "525002", "DDR4", 64, 3200));
+            RAMLIST.Add(new Components.RAMPart("G.Skill TridentZ Series 64GB (8 x 8)", 1139.99, 0, "RAM", "525003", "DDR4", 64, 3000));
+            RAMLIST.Add(new Components.RAMPart("G.Skill Ripjaws V Series 32GB (2 x 16)", 455.99, 0, "RAM", "526001", "DDR4", 32, 3200));
+            RAMLIST.Add(new Components.RAMPart("G.Skill TridentZ Series 32GB (2 x 16)", 574.99, 0, "RAM", "526002", "DDR4", 32, 3200));
+            RAMLIST.Add(new Components.RAMPart("G.Skill TridentZ RGB Series 64GB (4 x 16)", 1269.99, 0, "RAM", "527001", "DDR4", 64, 3200));
+            RAMLIST.Add(new Components.RAMPart("G.Skill Rpijaws V Series 64GB (4 x 16)", 909.99, 0, "RAM", "527002", "DDR4", 64, 3200));
+            RAMLIST.Add(new Components.RAMPart("G.Skill TridentZ RGB Series 128GB (8 x 16)", 2549.99, 0, "RAM", "528001", "DDR4", 128, 3200));
+            RAMLIST.Add(new Components.RAMPart("G.Skill TridentZ Series 128GB (8 x 16)", 1879.99, 0, "RAM", "528002", "DDR4", 128, 3200));
+            RAMLIST.Add(new Components.RAMPart("Team T-Force Vulcan 8GB (2 x 4)", 120.99, 0, "RAM", "531001", "DDR4", 8, 3000));
+            RAMLIST.Add(new Components.RAMPart("Team T-Force Delta II RGB Series 8GB (2 x 4)", 128.99, 0, "RAM", "531002", "DDR4", 8, 3000));
+            RAMLIST.Add(new Components.RAMPart("Team T-Force Delta II RGB Series 16GB (2 x 8)", 222.99, 0, "RAM", "533001", "DDR4", 16, 2400));
+            RAMLIST.Add(new Components.RAMPart("Team T-Force DARK 16GB (2 x 8)", 222.99, 0, "RAM", "533002", "DDR4", 16, 3000));
+            RAMLIST.Add(new Components.RAMPart("Team T-Force Vulcan 16GB (2 x 8)", 214.99, 0, "RAM", "533003", "DDR4", 16, 3000));
+            //END OF Ram list
         }
     }
 }
