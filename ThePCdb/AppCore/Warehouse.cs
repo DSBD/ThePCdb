@@ -41,16 +41,22 @@ namespace ThePCdb.AppCore
             CPUList.Add(new Components.CPUPart("Pentium Gold G5500", 209.99, 0, "CPU", 2, 3.8, Components.CPUPart.Socket.LGA1151, Components.CPUPart.Chipset.Z370, 0, "111011"));
             CPUList.Add(new Components.CPUPart("Pemtium Gold G5400", 89.99, 0, "CPU", 2, 3.7, Components.CPUPart.Socket.LGA1151, Components.CPUPart.Chipset.Z370, 0, "111012"));
             CPUList.Add(new Components.CPUPart("Celeron G4920",74.99, 0, "CPU", 2, 3.2, Components.CPUPart.Socket.LGA1151, Components.CPUPart.Chipset.Z370, 0, "111013"));
-            CPUList.Add(new Components.CPUPart("Celeron G4900", 59.99, 0, "CPU", 2, 3.1, Components.CPUPart.Socket.LGA1151, Components.CPUPart.Chipset.Z370, 0, "111014"));
-           
-
-
-
-
-
-
+            //AMD CPUS
+            CPUList.Add(new Components.CPUPart("Ryzen 7 1800X", 659.99, 0, "CPU", 8, 3.6, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370, 0, "123001"));
+            CPUList.Add(new Components.CPUPart("Ryzen 7 1700X", 514.99, 0, "CPU", 8, 3.4, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370, 0, "123002"));
+            CPUList.Add(new Components.CPUPart("Ryzen 7 1700", 439.99, 0, "CPU", 8, 3.0, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370, 0, "123003"));
+            CPUList.Add(new Components.CPUPart("Ryzen 5 1600X", 319.99, 0, "CPU", 6, 3.6, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370, 0, "123004"));
+            CPUList.Add(new Components.CPUPart("Ryzen 5 1600", 299.99, 0, "CPU", 6, 3.2, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370, 0, "123005"));
+            CPUList.Add(new Components.CPUPart("Ryzen 5 1500X", 213.99, 0, "CPU", 4, 3.5, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370, 0, "123006"));
+            CPUList.Add(new Components.CPUPart("Ryzen 5 1400", 224.99, 0, "CPU", 4, 3.2, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370, 0, "123007"));
+            CPUList.Add(new Components.CPUPart("Ryzen 5 2400G", 209.99, 0, "CPU", 4, 3.6, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370, 0, "123008"));
+            CPUList.Add(new Components.CPUPart("Ryzen 3 1200", 139.99, 0, "CPU", 4, 3.1, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370, 0, "123009"));
+            CPUList.Add(new Components.CPUPart("Ryzen 3 1300X", 169.99, 0, "CPU", 4, 3.5, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370, 0, "123010"));
+            CPUList.Add(new Components.CPUPart("Ryzen 3 2200G", 129.99, 0, "CPU", 4, 3.5, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370, 0, "123011"));
+            CPUList.Add(new Components.CPUPart("Ryzen Threadripper 1950X", 1399.99, 0, "CPU", 16, 3.4, Components.CPUPart.Socket.sTR4, Components.CPUPart.Chipset.X399, 0, "124001"));
+            CPUList.Add(new Components.CPUPart("Ryzen Threadripper 1920X", 1199.99, 0, "CPU", 12, 3.5, Components.CPUPart.Socket.sTR4, Components.CPUPart.Chipset.X399, 0, "124002"));
+            CPUList.Add(new Components.CPUPart("Ryzen Threadripper 1900X", 799.99, 0, "CPU", 8, 3.8, Components.CPUPart.Socket.sTR4, Components.CPUPart.Chipset.X399, 0, "124003"));
+            //END OF CPU LIST
         }
-
-
     }
 }
