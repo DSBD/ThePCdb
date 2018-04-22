@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using ThePCdb.AppCore;
+using ThePCdb.Components;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -22,9 +24,15 @@ namespace ThePCdb
     /// </summary>
     public sealed partial class BrowsePage : Page
     {
+        public IEnumerable<CPUPart> CPUList { get; }
+
         public BrowsePage()
         {
             this.InitializeComponent();
+            foreach (CPUPart CPU in CPUList)
+            {
+                CPUBox.Items.Add(CPU);
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
