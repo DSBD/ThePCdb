@@ -20,8 +20,8 @@ namespace ThePCdb.Components
         public enum Chipset
         {
             X299,
-            Z27,
-            X470,
+            Z370,
+            X370,
             X399
         }
         public Socket SocketType { get; set; }
