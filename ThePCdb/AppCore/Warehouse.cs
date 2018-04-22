@@ -100,6 +100,24 @@ namespace ThePCdb.AppCore
             MotherboardList.Add(new Components.MotherboardPart("MSI X399 SLI Plus sTR4", 439.99, 0, "Motherboard", "234002", "ATX", 8, 4, true, Components.CPUPart.Socket.sTR4, Components.CPUPart.Chipset.X399));
             MotherboardList.Add(new Components.MotherboardPart("Gigabyte X399 AORUS Gaming 7 sTR4", 499.9, 0, "Motherboard", "234001", "ATX", 8, 5, true, Components.CPUPart.Socket.sTR4, Components.CPUPart.Chipset.X399));
             MotherboardList.Add(new Components.MotherboardPart("Gigabyte X399 Designare EX sTR4", 514.99, 0, "Motherboard", "234002", "ATX", 8, 5, true, Components.CPUPart.Socket.sTR4, Components.CPUPart.Chipset.X399));
+            MotherboardList.Add(new Components.MotherboardPart("MSI X370 Gaming Pro Carbon AM4", 249.99, 0, "Motherboard", "233001", "ATX", 8, 4, true, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370));
+            MotherboardList.Add(new Components.MotherboardPart("MSI X370 Gaming Plus AM4", 173.99, 0, "Motherboard", "233002", "ATX", 4, 3, true, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370));
+            MotherboardList.Add(new Components.MotherboardPart("MSI X370 Gaming Pro AM4", 194.99, 0, "Motherboard", "233003", "ATX", 4, 3, true, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370));
+            MotherboardList.Add(new Components.MotherboardPart("MSI X370 Gaming M7 ACK AM4", 309.99, 0, "Motherboard", "233004", "ATX", 4, 3, true, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370));
+            MotherboardList.Add(new Components.MotherboardPart("MSI KRAIT Gaming AM4", 184.99, 0, "Motherboard", "233001", "ATX", 8, 5, true, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370));
+            MotherboardList.Add(new Components.MotherboardPart("MSI X370 SLI PLus", 164.99, 0, "Motherboard", "233006", "ATX", 4, 3, true, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370));
+            MotherboardList.Add(new Components.MotherboardPart("MSI X370 XPOWER Gaming Titanium AM4", 374.99, 0, "Motherboard", "233007", "ATX", 4, 3, true, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370));
+            MotherboardList.Add(new Components.MotherboardPart("Asus ROG Crosshait VI HERO", 329.99, 0, "Motherboard", "213001", "ATX", 8, 4, true, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370));
+            MotherboardList.Add(new Components.MotherboardPart("Asus ROG Strix X370-F Gaming", 239.99, 0, "Motherboard", "213002", "ATX", 8, 4, true, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370));
+            MotherboardList.Add(new Components.MotherboardPart("Asus Prime X370-Pro", 197.99, 0, "Motherboard", "213003", "ATX", 4, 3, true, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370));
+            MotherboardList.Add(new Components.MotherboardPart("Asus ROG Crosshair VI Hero (Wifi)", 328.99, 0, "Motherboard", "213004", "ATX", 8, 3, true, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370));
+            MotherboardList.Add(new Components.MotherboardPart("Asus ROG Crosshair VI Extreme ", 444.99, 0, "Motherboard", "213005", "ATX", 8, 3, true, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370));
+            MotherboardList.Add(new Components.MotherboardPart("Asus Prime X370-A", 159.99, 0, "Motherboard", "213006", "ATX", 4, 3, true, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370));
+            MotherboardList.Add(new Components.MotherboardPart("Gigabyte GA-AX370 Gaming 5 AM4", 334.99, 0, "Motherboard", "223001", "ATX", 4, 3, true, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370));
+            MotherboardList.Add(new Components.MotherboardPart("Gigabyte GA-AX370 Gaming K5 AM4", 242.99, 0, "Motherboard", "223002", "ATX", 4, 3, true, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370));
+            MotherboardList.Add(new Components.MotherboardPart("Gigabyte AORUS GA-AX370 Gaming K7", 259.99, 0, "Motherboard", "223003", "ATX", 4, 3, true, Components.CPUPart.Socket.AM4, Components.CPUPart.Chipset.X370));
+
+
 
 
 
