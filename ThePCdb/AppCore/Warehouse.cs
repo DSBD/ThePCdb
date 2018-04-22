@@ -14,6 +14,7 @@ namespace ThePCdb.AppCore
         //TODO: Methods for Each Component
 
         static public List<Components.CPUPart> CPUList { get; set; }
+        static public List<Components.MotherboardPart> MotherboardList { get; set; }
         static Warehouse()
         {
 
@@ -57,8 +58,54 @@ namespace ThePCdb.AppCore
             CPUList.Add(new Components.CPUPart("AMD Ryzen Threadripper 1920X", 1199.99, 0, "CPU", 12, 3.5, Components.CPUPart.Socket.sTR4, Components.CPUPart.Chipset.X399, 0, "124002"));
             CPUList.Add(new Components.CPUPart("AMD Ryzen Threadripper 1900X", 799.99, 0, "CPU", 8, 3.8, Components.CPUPart.Socket.sTR4, Components.CPUPart.Chipset.X399, 0, "124003"));
             //END OF CPU LIST
-
             //Remember to ADD MANUFACTURER TO THE PART NAME DURING CREATION AS IT"S NOT SEPRATE LIKE IN THE SPREADSHEET
+        }
+        public static void loadMotherboards()
+        {
+            MotherboardList.Add(new Components.MotherboardPart("Asus ROG Rampage VI Extreme", 810.92, 0, "Motherboard", "212001","ATX",8,4,true, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Chipset.X299));
+            MotherboardList.Add(new Components.MotherboardPart("MSI X299 Gaming Pro Carbon AC", 630.96, 0, "Motherboard", "222001", "ATX", 8, 4, true, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Chipset.X299));
+            MotherboardList.Add(new Components.MotherboardPart("MSI X299 Gaming M7 ACK", 682.27, 0, "Motherboard", "222002", "ATX", 8, 4, true, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Chipset.X299));
+            MotherboardList.Add(new Components.MotherboardPart("Asus Prime X299 Deluxe", 596.99, 0, "Motherboard", "212002", "ATX", 8, 3, true, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Chipset.X299));
+            MotherboardList.Add(new Components.MotherboardPart("Gigabyte AORUS Gaming 7", 596.99, 0, "Motherboard", "232001", "ATX", 8, 5, true, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Chipset.X299));
+            MotherboardList.Add(new Components.MotherboardPart("Asus WS X299 PRO/SE", 514.99, 0, "Motherboard", "21200", "EATX", 8, 4, true, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Chipset.X299));
+            MotherboardList.Add(new Components.MotherboardPart("Asus ROG Strix X299-XE Gaming", 474.99, 0, "Motherboard", "212002", "ATX", 8, 4, true, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Chipset.X299));
+            MotherboardList.Add(new Components.MotherboardPart("Asus ROG Strix X299-E Gaming", 439.99, 0, "Motherboard", "212002", "ATX", 8, 3, true, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Chipset.X299));
+            MotherboardList.Add(new Components.MotherboardPart("Asus Prime X299-A", 394.99, 0, "Motherboard", "212006", "ATX", 8, 3, true, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Chipset.X299));
+            MotherboardList.Add(new Components.MotherboardPart("Asus TUF X299 MARK 2", 334.99, 0, "Motherboard", "212007", "ATX", 8, 3, true, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Chipset.X299));
+            MotherboardList.Add(new Components.MotherboardPart("MSI X299 SLI Plus", 312.99, 0, "Motherboard", "222003", "ATX", 8, 4, true, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Chipset.X299));
+            MotherboardList.Add(new Components.MotherboardPart("Gigabyte X299 UD4", 309.99, 0, "Motherboard", "232002", "ATX", 8, 5, true, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Chipset.X299));
+            MotherboardList.Add(new Components.MotherboardPart("Asus ROG Maximus X Extreme", 624.99, 0, "Motherboard", "211001", "ATX", 4, 3, true, Components.CPUPart.Socket.LGA1151, Components.CPUPart.Chipset.Z370));
+            MotherboardList.Add(new Components.MotherboardPart("Asus ROG Maximus X Formula", 569.99, 0, "Motherboard", "211002", "ATX", 4, 3, true, Components.CPUPart.Socket.LGA1151, Components.CPUPart.Chipset.Z370));
+            MotherboardList.Add(new Components.MotherboardPart("Asus ROG Maximus X Apex", 498.99, 0, "Motherboard", "211003", "EATX", 2, 4, true, Components.CPUPart.Socket.LGA1151, Components.CPUPart.Chipset.Z370));
+            MotherboardList.Add(new Components.MotherboardPart("Asus ROG Maximus X Code", 369.99, 0, "Motherboard", "211004", "ATX", 4, 2, true, Components.CPUPart.Socket.LGA1151, Components.CPUPart.Chipset.Z370));
+            MotherboardList.Add(new Components.MotherboardPart("Asus ROG Maximus X Hero", 324.99, 0, "Motherboard", "211005", "ATX", 4, 3, true, Components.CPUPart.Socket.LGA1151, Components.CPUPart.Chipset.Z370));
+            MotherboardList.Add(new Components.MotherboardPart("Asus Prime Z370-A", 319.02, 0, "Motherboard", "211006", "ATX", 4, 3, true, Components.CPUPart.Socket.LGA1151, Components.CPUPart.Chipset.Z370));
+            MotherboardList.Add(new Components.MotherboardPart("Asus ROG Maximus X Hero (Wifi)", 349.99, 0, "Motherboard", "211007", "ATX", 4, 3, true, Components.CPUPart.Socket.LGA1151, Components.CPUPart.Chipset.Z370));
+            MotherboardList.Add(new Components.MotherboardPart("Asus ROG Strix Z730-E Gaming", 259.99, 0, "Motherboard", "211008", "ATX", 4, 3, true, Components.CPUPart.Socket.LGA1151, Components.CPUPart.Chipset.Z370));
+            MotherboardList.Add(new Components.MotherboardPart("Asus ROG Strix Z730-F Gaming", 243.99, 0, "Motherboard", "211009", "ATX", 4, 3, true, Components.CPUPart.Socket.LGA1151, Components.CPUPart.Chipset.Z370));
+            MotherboardList.Add(new Components.MotherboardPart("Asus ROG Strix Z730-H Gaming", 209.99, 0, "Motherboard", "211010", "ATX", 4, 3, true, Components.CPUPart.Socket.LGA1151, Components.CPUPart.Chipset.Z370));
+            MotherboardList.Add(new Components.MotherboardPart("MSI Z370 Gaming Pro Carbon AC", 264.99, 0, "Motherboard", "231001", "ATX", 4, 3, true, Components.CPUPart.Socket.LGA1151, Components.CPUPart.Chipset.Z370));
+            MotherboardList.Add(new Components.MotherboardPart("MSI Z370 Gaming M5", 243.99, 0, "Motherboard", "231002", "ATX", 4, 3, true, Components.CPUPart.Socket.LGA1151, Components.CPUPart.Chipset.Z370));
+            MotherboardList.Add(new Components.MotherboardPart("MSI Z370 Gaming Pro Carbon", 229.99, 0, "Motherboard", "231003", "ATX", 4, 3, true, Components.CPUPart.Socket.LGA1151, Components.CPUPart.Chipset.Z370));
+            MotherboardList.Add(new Components.MotherboardPart("MSI Z370 KRAIT Gaming", 204.99, 0, "Motherboard", "231004", "ATX", 4, 3, true, Components.CPUPart.Socket.LGA1151, Components.CPUPart.Chipset.Z370));
+            MotherboardList.Add(new Components.MotherboardPart("MSI Z370 Tomahowk", 190.50, 0, "Motherboard", "231005", "ATX", 4, 3, true, Components.CPUPart.Socket.LGA1151, Components.CPUPart.Chipset.Z370));
+            MotherboardList.Add(new Components.MotherboardPart("MSI Z370 SLI Plus", 189.99, 0, "Motherboard", "231006", "ATX", 4, 3, true, Components.CPUPart.Socket.LGA1151, Components.CPUPart.Chipset.Z370));
+            MotherboardList.Add(new Components.MotherboardPart("Gigabyte Z730 AORUS Gaming 7", 298.99, 0, "Motherboard", "221001", "ATX", 4, 3, true, Components.CPUPart.Socket.LGA1151, Components.CPUPart.Chipset.Z370));
+            MotherboardList.Add(new Components.MotherboardPart("Gigabyte Z730 AORUS Gaming 5", 233.99, 0, "Motherboard", "221001", "ATX", 4, 3, true, Components.CPUPart.Socket.LGA1151, Components.CPUPart.Chipset.Z370));
+            MotherboardList.Add(new Components.MotherboardPart("Gigabyte Z730 AORUS Ultra Gaming", 214.99, 0, "Motherboard", "221001", "ATX", 4, 3, true, Components.CPUPart.Socket.LGA1151, Components.CPUPart.Chipset.Z370));
+            MotherboardList.Add(new Components.MotherboardPart("Asus ROG Zenith Extreme sTR4", 661.99, 0, "Motherboard", "214001", "EATX", 8, 4, true, Components.CPUPart.Socket.sTR4, Components.CPUPart.Chipset.X399));
+            MotherboardList.Add(new Components.MotherboardPart("Asus ROG Strix X399-E", 499.99, 0, "Motherboard", "214002", "EATX", 8, 3, true, Components.CPUPart.Socket.sTR4, Components.CPUPart.Chipset.X399));
+            MotherboardList.Add(new Components.MotherboardPart("Asus Prime X399-A sTR4", 533.99, 0, "Motherboard", "214003", "EATX", 8, 4, true, Components.CPUPart.Socket.sTR4, Components.CPUPart.Chipset.X399));
+            MotherboardList.Add(new Components.MotherboardPart("MSI X399 Gaming Pro Carbon AC sTR4", 489.99, 0, "Motherboard", "234001", "ATX", 8, 4, true, Components.CPUPart.Socket.sTR4, Components.CPUPart.Chipset.X399));
+            MotherboardList.Add(new Components.MotherboardPart("MSI X399 SLI Plus sTR4", 439.99, 0, "Motherboard", "234002", "ATX", 8, 4, true, Components.CPUPart.Socket.sTR4, Components.CPUPart.Chipset.X399));
+            MotherboardList.Add(new Components.MotherboardPart("Gigabyte X399 AORUS Gaming 7 sTR4", 499.9, 0, "Motherboard", "234001", "ATX", 8, 5, true, Components.CPUPart.Socket.sTR4, Components.CPUPart.Chipset.X399));
+            MotherboardList.Add(new Components.MotherboardPart("Gigabyte X399 Designare EX sTR4", 514.99, 0, "Motherboard", "234002", "ATX", 8, 5, true, Components.CPUPart.Socket.sTR4, Components.CPUPart.Chipset.X399));
+
+
+
+
+
+
         }
     }
 }
