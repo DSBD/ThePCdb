@@ -37,7 +37,9 @@ namespace ThePCdb
             CategoryBox.Items.Add("Storage");
             CategoryBox.Items.Add("GPU");
             CategoryBox.Items.Add("PSU");
-            PartBox.Items.Add("No Category Selected");  
+            PartBox.Items.Add("No Category Selected");
+            PartBox.DisplayMemberPath = "Name";
+           
 
         }
 
@@ -48,60 +50,61 @@ namespace ThePCdb
 
         private void DetermineCategory(object category)
         {
+            
             if ((string)category == "CPU")
             {
                 foreach (CPUPart CPU in Warehouse.CPUList)
                 {
-                    PartBox.Items.Add(CPU.Name);
+                    PartBox.Items.Add(CPU);
                 }
             }
             else if ((string)category == "MotherBoard")
             {
                 foreach (MotherboardPart MotherBoard in Warehouse.MotherboardList)
                 {
-                    PartBox.Items.Add(MotherBoard.Name);
+                    PartBox.Items.Add(MotherBoard);
                 }
             }
             else if ((string)category == "RAM")
             {
                 foreach (RAMPart RAM in Warehouse.RAMLIST)
                 {
-                    PartBox.Items.Add(RAM.Name);
+                    PartBox.Items.Add(RAM);
                 }
             }
             else if ((string)category == "Cooling")
             {
                 foreach (CoolingPart Cooling in Warehouse.CoolingList)
                 {
-                    PartBox.Items.Add(Cooling.Name);
+                    PartBox.Items.Add(Cooling);
                 }
             }
             else if ((string)category == "Case")
             {
                 foreach (CasePart Case in Warehouse.CaseList)
                 {
-                    PartBox.Items.Add(Case.Name);
+                    PartBox.Items.Add(Case);
                 }
             }
             else if ((string)category == "Storage")
             {
                 foreach (StoragePart Storage in Warehouse.StorageList)
                 {
-                    PartBox.Items.Add(Storage.Name);
+                    PartBox.Items.Add(Storage);
                 }
             }
             else if ((string)category == "GPU")
             {
                 foreach (GPUPart GPU in Warehouse.GPUList)
                 {
-                    PartBox.Items.Add(GPU.Name);
+                    PartBox.Items.Add(GPU);
                 }
             }
             else if ((string)category == "PSU")
             {
                 foreach (PSUPart PSU in Warehouse.PSUList)
                 {
-                    PartBox.Items.Add(PSU.Name);
+                    PartBox.Items.Add(PSU);
                 }
             }
             else
