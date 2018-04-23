@@ -27,7 +27,7 @@
             <ComboBox x:Name="CategoryBox" Header="Category" Height="89" Width="400" Foreground="White" FontFamily="Consolas" FontSize="24" Grid.Row="1" HorizontalAlignment="Center"/>
             <Button Content="Select" Grid.Row="2" HorizontalAlignment="Center" Height="70" Width="250" Grid.RowSpan="1"  Foreground="White" FontSize="24" Click="Button_Click_1" Margin="20"/>
             <ComboBox  x:Name="PartBox"  Header="Part" HorizontalAlignment="Center" Height="89" Width="400" Foreground="White" FontFamily="Consolas" FontSize="24" Grid.Row="3"/>
-            <Button Content="Back" Foreground="White" FontSize="24" Width="250" Height="100" HorizontalAlignment="Center" Click="Button_Click" VerticalAlignment="Bottom" Grid.Row="4" Margin="100"/>
+            <Button Content="Back" Foreground="White" FontSize="24" Width="250" Height="100" HorizontalAlignment="Center" Click="Button_Click" VerticalAlignment="Bottom" Grid.Row="4" Margin="625,0,625,-182"/>
         </Grid>
     </Grid>
 </Page>
