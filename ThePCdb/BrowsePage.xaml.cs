@@ -24,14 +24,14 @@ namespace ThePCdb
     /// </summary>
     public sealed partial class BrowsePage : Page
     {
-        public IEnumerable<CPUPart> CPUList { get; }
+        //public IEnumerable<CPUPart> CPUList { get; }
 
         public BrowsePage()
         {
             this.InitializeComponent();
-            foreach (CPUPart CPU in CPUList)
+            foreach (CPUPart CPU in AppCore.Warehouse.CPUList)
             {
-                CPUBox.Items.Add(CPU);
+                CPUBox.Items.Add(CPU.Name);
             }
         }
 

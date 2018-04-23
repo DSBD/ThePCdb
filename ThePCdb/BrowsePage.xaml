@@ -14,13 +14,7 @@
                 <GradientStop Color="#FF1452D6" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <ComboBox x:Name="CPUBox" Header="CPU" HorizontalAlignment="Center" Margin="10,252,8,0" Height="112" Width="414" Background="#FFFFFFFF" BorderBrush="#66FBFBFB" FocusVisualPrimaryBrush="Black" Foreground="White" FontFamily="Consolas" FontSize="36">
-            <ComboBox.ItemTemplate>
-                <DataTemplate x:DataType="local:Component/CPU">
-                    
-                </DataTemplate>
-            </ComboBox.ItemTemplate>
-        </ComboBox>
+        <ComboBox x:Name="CPUBox" Header="CPU" HorizontalAlignment="Center" Margin="10,252,8,0" Height="112" Width="600" Background="#FFFFFFFF" BorderBrush="#66FBFBFB" FocusVisualPrimaryBrush="Black" Foreground="Black" FontFamily="Consolas" FontSize="36"/>
         <TextBlock Foreground="White" FontSize="60" Text="Browse Parts" HorizontalAlignment="Center" Margin="41,0,55,665" Height="80" VerticalAlignment="Bottom"/>
         <Button Content="Back" Foreground="White" FontSize="24" Width="250" Height="100" HorizontalAlignment="Center" Click="Button_Click" Margin="616,776,634,124"/>
     </Grid>
