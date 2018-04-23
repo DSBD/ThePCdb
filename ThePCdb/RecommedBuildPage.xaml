@@ -14,7 +14,19 @@
                 <GradientStop Color="#FF1452D6" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBlock Foreground="White" FontSize="54" Text="Recommend Build" HorizontalAlignment="Center"/>
-        <Button Grid.Row="4" Grid.ColumnSpan="2" Content="Back" Foreground="White" FontSize="24" Width="250" Height="100" HorizontalAlignment="Center" Click="Button_Click"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Foreground="White" FontSize="50" Text="Recommend Build" HorizontalAlignment="Center"/>
+            <TextBox Grid.Row="1" Header="Enter Min. Budget:" Foreground="White" FontFamily="Consolas" FontSize="24" Width="300"/>
+            <TextBox Grid.Row="2" Header="Enter Max Budget:" Foreground="White" FontFamily="Consolas" FontSize="24" Width="300"/>
+            <Button Grid.Row="3" Grid.ColumnSpan="2" Content="Find a Build!" Foreground="White" FontSize="24" Width="250" Height="100" Margin="0,25,0,0" HorizontalAlignment="Center"/>
+            <Button Grid.Row="4" Grid.ColumnSpan="2" Content="Back" Foreground="White" FontSize="24" Width="250" Height="100" Margin="0,25,0,0" HorizontalAlignment="Center" Click="Button_Click"/>
+        </Grid>
     </Grid>
 </Page>
