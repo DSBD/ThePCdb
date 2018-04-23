@@ -101,7 +101,7 @@ namespace ThePCdb
             {
                 foreach (PSUPart PSU in Warehouse.PSUList)
                 {
-                    PartBox.Items.Add(PSU);
+                    PartBox.Items.Add(PSU.Name);
                 }
             }
             else
