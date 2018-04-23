@@ -34,6 +34,7 @@ namespace ThePCdb.AppCore
             loadRAM();
             loadCooling();
             loadCase();
+            loadStorage();
             loadPSU();
             loadGPU();
 
@@ -324,7 +325,7 @@ namespace ThePCdb.AppCore
         }
         public static void loadGPU()
         {
-
+            
         }
     }
 }
