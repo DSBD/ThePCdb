@@ -17,6 +17,8 @@ namespace ThePCdb.AppCore
         static public List<Components.CoolingPart> CoolingList { get; set; }
         static public List<Components.CasePart> CaseList { get; set; }
         static public List<Components.StoragePart> StorageList { get; set; }
+        static public List<Components.PSUPart> PSUList { get; set; }
+        static public List<Components.GPUPart> GPUList { get; set; }
         static Warehouse()
         {
             CPUList = new List<Components.CPUPart>();
@@ -25,11 +27,16 @@ namespace ThePCdb.AppCore
             CoolingList = new List<Components.CoolingPart>();
             CaseList = new List<Components.CasePart>();
             StorageList = new List<Components.StoragePart>();
+            PSUList = new List<Components.PSUPart>();
+            GPUList = new List<Components.GPUPart>();
             LoadCPU();
             loadMotherboards();
             loadRAM();
             loadCooling();
             loadCase();
+            loadPSU();
+            loadGPU();
+
         }
         public static void LoadCPU()
         {
@@ -269,6 +276,34 @@ namespace ThePCdb.AppCore
             StorageList.Add(new Components.StoragePart("Corsair Force MP500 M.2 2280 400GB", 419.99, 0, "Storage", "841005", "SSD", 400, "NVMe", "2280"));
             StorageList.Add(new Components.StoragePart("Corsair Force MP500 M.2 2280 8000GB", 899.99, 0, "Storage", "841006", "SSD", 800, "NVMe", "2280"));
             // END OF STORAGE
+        }
+        public static void loadPSU()
+        {
+            PSUList.Add(new Components.PSUPart("Corsair CX-M Series CX550W 80 Plus BRONZE", 89.99, 0, "PSU", "411001", "ATX", 550, Components.PSUPart.EightyPlus.Bronze));
+            PSUList.Add(new Components.PSUPart("Corsair CX-M Series CX650W 80 Plus BRONZE", 99.99, 0, "PSU", "411002", "ATX", 50, Components.PSUPart.EightyPlus.Bronze));
+            PSUList.Add(new Components.PSUPart("Corsair CX750M 80 Plus BRONZE", 124.99, 0, "PSU", "411003", "ATX", 750, Components.PSUPart.EightyPlus.Bronze));
+            PSUList.Add(new Components.PSUPart("Corsair CX850M 80 Plus BRONZE", 149.99, 0, "PSU", "411004", "ATX", 850, Components.PSUPart.EightyPlus.Bronze));
+
+            PSUList.Add(new Components.PSUPart("Corsair CX-M RMx Series RM750x", 149.99, 0, "PSU", "412001", "ATX", 750, Components.PSUPart.EightyPlus.Gold));
+            PSUList.Add(new Components.PSUPart("Corsair CX-M RMx Series RM850x", 164.99, 0, "PSU", "412002", "ATX", 850, Components.PSUPart.EightyPlus.Gold));
+            PSUList.Add(new Components.PSUPart("Corsair SF Series SF450", 114.99, 0, "PSU", "412003", "ATX", 450, Components.PSUPart.EightyPlus.Gold));
+            PSUList.Add(new Components.PSUPart("Corsair SF Series SF600", 179.99, 0, "PSU", "412004", "ATX", 600, Components.PSUPart.EightyPlus.Gold));
+
+            PSUList.Add(new Components.PSUPart("Corsair HX Series HX750", 174.99, 0, "PSU", "413001", "ATX", 750, Components.PSUPart.EightyPlus.Platinum));
+            PSUList.Add(new Components.PSUPart("Corsair HX Series HX850", 214.99, 0, "PSU", "413001", "ATX", 750, Components.PSUPart.EightyPlus.Platinum));
+            PSUList.Add(new Components.PSUPart("Corsair HX Series HX1000", 264.99, 0, "PSU", "413001", "ATX", 750, Components.PSUPart.EightyPlus.Platinum));
+            PSUList.Add(new Components.PSUPart("Corsair HX Series HX1200", 309.99, 0, "PSU", "413001", "ATX", 750, Components.PSUPart.EightyPlus.Platinum));
+            PSUList.Add(new Components.PSUPart("Corsair AXi Series AX860i", 284.99, 0, "PSU", "413001", "ATX", 750, Components.PSUPart.EightyPlus.Platinum));
+            PSUList.Add(new Components.PSUPart("Corsair AXi Series HX1200i", 439.99, 0, "PSU", "413001", "ATX", 750, Components.PSUPart.EightyPlus.Platinum));
+
+
+
+
+
+        }
+        public static void loadGPU()
+        {
+
         }
     }
 }
