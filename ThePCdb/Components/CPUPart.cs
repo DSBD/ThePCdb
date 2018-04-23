@@ -8,8 +8,8 @@ namespace ThePCdb.Components
 {
     public class CPUPart : Part
     {
-        protected int CoreCount { get; set; }
-        protected double Frequency { get; set; }
+        public int CoreCount { get; set; }
+        public double Frequency { get; set; }
         public enum Socket
         {
            LGA1151,
@@ -26,7 +26,7 @@ namespace ThePCdb.Components
         }
         public Socket SocketType { get; set; }
         public Chipset ChipsetCompatability { get; set; }
-        protected int CineBenchScore { get; set; }
+        public int CineBenchScore { get; set; }
 
         public CPUPart(string name, double price, int rating, string type, int corecount, double freq, Socket soc, Chipset chip, int cine, string ID) : base(name, price, rating, type, ID)
         {

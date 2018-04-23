@@ -24,20 +24,77 @@ namespace ThePCdb
     /// </summary>
     public sealed partial class BrowsePage : Page
     {
-        public IEnumerable<CPUPart> CPUList { get; }
 
         public BrowsePage()
         {
             this.InitializeComponent();
-            foreach (CPUPart CPU in CPUList)
-            {
-              
-            }
+
+            CategoryBox.Items.Add("CPU");
+            CategoryBox.Items.Add("MotherBoard");
+            CategoryBox.Items.Add("RAM");
+            CategoryBox.Items.Add("Cooling");
+            CategoryBox.Items.Add("Case");
+            CategoryBox.Items.Add("Storage");
+            PartBox.Items.Add("No Category Selected");  
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(HomeScreen));
         }
+
+        private void DetermineCategory(object category)
+        {
+            if ((string)category == "CPU")
+            {
+                foreach (CPUPart CPU in Warehouse.CPUList)
+                {
+                    PartBox.Items.Add(CPU.Name);
+                }
+            }
+            else if ((string)category == "MotherBoard")
+            {
+                foreach (MotherboardPart MotherBoard in Warehouse.MotherboardList)
+                {
+                    PartBox.Items.Add(MotherBoard.Name);
+                }
+            }
+            else if ((string)category == "RAM")
+            {
+                foreach (RAMPart RAM in Warehouse.RAMLIST)
+                {
+                    PartBox.Items.Add(RAM.Name);
+                }
+            }
+            else if ((string)category == "Cooling")
+            {
+                foreach (CoolingPart Cooling in Warehouse.CoolingList)
+                {
+                    PartBox.Items.Add(Cooling.Name);
+                }
+            }
+            else if ((string)category == "Case")
+            {
+                foreach (CasePart Case in Warehouse.CaseList)
+                {
+                    PartBox.Items.Add(Case.Name);
+                }
+            }
+            else if ((string)category == "Storage")
+            {
+                foreach (StoragePart Storage in Warehouse.StorageList)
+                {
+                    PartBox.Items.Add(Storage.Name);
+                }
+            }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            PartBox.Items.Clear();
+            DetermineCategory(CategoryBox.SelectedItem);
+        }
     }
 }
+
