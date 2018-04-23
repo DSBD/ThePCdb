@@ -35,6 +35,8 @@ namespace ThePCdb
             CategoryBox.Items.Add("Cooling");
             CategoryBox.Items.Add("Case");
             CategoryBox.Items.Add("Storage");
+            CategoryBox.Items.Add("GPU");
+            CategoryBox.Items.Add("PSu");
             PartBox.Items.Add("No Category Selected");  
 
         }
@@ -86,6 +88,20 @@ namespace ThePCdb
                 foreach (StoragePart Storage in Warehouse.StorageList)
                 {
                     PartBox.Items.Add(Storage.Name);
+                }
+            }
+            else if ((string)category == "GPU")
+            {
+                foreach (GPUPart GPU in Warehouse.GPUList)
+                {
+                    PartBox.Items.Add(GPU.Name);
+                }
+            }
+            else if ((string)category == "PSU")
+            {
+                foreach (PSUPart PSU in Warehouse.PSUList)
+                {
+                    PartBox.Items.Add(PSU);
                 }
             }
             else
