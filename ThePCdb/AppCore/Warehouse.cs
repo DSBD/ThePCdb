@@ -25,6 +25,12 @@ namespace ThePCdb.AppCore
         
         static Warehouse()
         {
+            CPUList = new List<Components.CPUPart>();
+            MotherboardList = new List<Components.MotherboardPart>();
+            RAMLIST = new List<Components.RAMPart>();
+            CoolingList = new List<Components.CoolingPart>();
+            CaseList = new List<Components.CasePart>();
+            StorageList = new List<Components.StoragePart>();
             LoadCPU();
             loadMotherboards();
             loadRAM();
