@@ -8,10 +8,10 @@ namespace ThePCdb.Components
 {
     public class StoragePart : Part
     {
-        protected string DriveType { get; set; }
-        protected int Capacity { get; set; }
-        protected string FormFactor { get; set; }
-        protected string InterfaceType { get; set; }
+        public string DriveType { get; set; }
+        public int Capacity { get; set; }
+        public string FormFactor { get; set; }
+        public string InterfaceType { get; set; }
 
         public StoragePart(string name, double price, int rating, string type, string IPID, string dtype, int capacity, string ffactor, string interfaceType) : base(name, price, rating, type, IPID)
         {

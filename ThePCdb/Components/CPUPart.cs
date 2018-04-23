@@ -15,14 +15,16 @@ namespace ThePCdb.Components
            LGA1151,
            LGA2066,
            AM4,
-           sTR4
+           sTR4,
+           Other
         }
         public enum Chipset
         {
             X299,
             Z370,
             X370,
-            X399
+            X399,
+            Other
         }
         public Socket SocketType { get; set; }
         public Chipset ChipsetCompatability { get; set; }

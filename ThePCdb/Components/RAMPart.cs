@@ -8,9 +8,9 @@ namespace ThePCdb.Components
 {
     public class RAMPart : Part
     {
-        protected string RAMType { get; set; }
-        protected int Capacity { get; set; }
-        protected int Frequency { get; set; }
+        public string RAMType { get; set; }
+        public int Capacity { get; set; }
+        public int Frequency { get; set; }
         public RAMPart(string name, double price, int rating, string type, string ID, string ramt, int cap, int freq) : base(name, price, rating, type, ID)
         {
             RAMType = ramt;

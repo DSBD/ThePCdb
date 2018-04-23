@@ -8,9 +8,9 @@ namespace ThePCdb.Components
 {
     public class PSUPart : Part
     {
-        protected string FormFactor { get; set; }
-        protected int Wattage { get; set; }
-        protected EightyPlus EPRating { get; set; }
+        public string FormFactor { get; set; }
+        public int Wattage { get; set; }
+        public EightyPlus EPRating { get; set; }
 
         public PSUPart(string name, double price, int rating, string type, string ipid, string ffactor, int wattage, EightyPlus epRating) : base(name, price, rating, type, ipid)
         {
@@ -24,7 +24,8 @@ namespace ThePCdb.Components
             Bronze,
             Gold,
             Platinum,
-            Titanium
+            Titanium,
+            Other
         }
     }
 }

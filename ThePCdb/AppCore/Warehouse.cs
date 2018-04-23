@@ -248,34 +248,34 @@ namespace ThePCdb.AppCore
             StorageList.Add(new Components.StoragePart("WD Blue 3D NAND 500GB PC SSD", 169.99, 0, "Storage", "811002", "SSD", 500, "2.5", "SATA"));
             StorageList.Add(new Components.StoragePart("WD Blue 3D NAND 1TB PC SSD", 449.99, 0, "Storage", "811003", "SSD", 1000, "2.5", "SATA"));
             StorageList.Add(new Components.StoragePart("WD Blue 3D NAND 2TB PC SSD", 640.99, 0, "Storage", "811004", "SSD", 2000, "2.5", "SATA"));
-            StorageList.Add(new Components.StoragePart("WD Blue 3D NAND 250GB PC SSD M.2", 105.99, 0, "Storage", "811005", "SSD", 250, "SATA M.2", "SATA"));
-            StorageList.Add(new Components.StoragePart("WD Blue 3D NAND 500GB PC SSD M.2", 169.99, 0, "Storage", "811006", "SSD", 500, "SATA M.2", "SATA"));
-            StorageList.Add(new Components.StoragePart("WD Blue 3D NAND 1TB PC SSD M.2", 349.99, 0, "Storage", "811007", "SSD", 1000, "SATA M.2", "SATA"));
-            StorageList.Add(new Components.StoragePart("WD Blue 3D NAND 2TB PC SSD M.2", 749.99, 0, "Storage", "811008", "SSD", 2000, "SATA M.2", "SATA"));
+            StorageList.Add(new Components.StoragePart("WD Blue 3D NAND 250GB PC SSD M.2", 105.99, 0, "Storage", "811005", "SSD", 250, "SATA M.2", "M.2"));
+            StorageList.Add(new Components.StoragePart("WD Blue 3D NAND 500GB PC SSD M.2", 169.99, 0, "Storage", "811006", "SSD", 500, "SATA M.2", "M.2"));
+            StorageList.Add(new Components.StoragePart("WD Blue 3D NAND 1TB PC SSD M.2", 349.99, 0, "Storage", "811007", "SSD", 1000, "SATA M.2", "M.2"));
+            StorageList.Add(new Components.StoragePart("WD Blue 3D NAND 2TB PC SSD M.2", 749.99, 0, "Storage", "811008", "SSD", 2000, "SATA M.2", "M.2"));
             StorageList.Add(new Components.StoragePart("WD Black 500GB", 89.99, 0, "Storage", "812001", "HDD", 500, "3.5", "SATA"));
             StorageList.Add(new Components.StoragePart("WD Black 1TB", 109.99, 0, "Storage", "812002", "HDD", 1000, "3.5", "SATA"));
             StorageList.Add(new Components.StoragePart("WD Black 2TB", 179.99, 0, "Storage", "812003", "HDD", 2000, "3.5", "SATA"));
             StorageList.Add(new Components.StoragePart("WD Black 4TB", 263.99, 0, "Storage", "812004", "HDD", 4000, "3.5", "SATA"));
             StorageList.Add(new Components.StoragePart("WD Black 6TB", 349.99, 0, "Storage", "812005", "HDD", 6000, "3.5", "SATA"));
-            StorageList.Add(new Components.StoragePart("Seagate BarraCuda ST5", 69.99, 0, "Storage", "821001", "HDD", 500, "3.5", "SATA"));
-            StorageList.Add(new Components.StoragePart("Seagate BarraCuda ST1", 99.99, 0, "Storage", "821002", "HDD", 1000, "3.5", "SATA"));
-            StorageList.Add(new Components.StoragePart("Seagate BarraCuda ST2", 89.99, 0, "Storage", "821003", "HDD", 2000, "3.5", "SATA"));
-            StorageList.Add(new Components.StoragePart("Seagate BarraCuda ST3", 139.99, 0, "Storage", "821004", "HDD", 3000, "3.5", "SATA"));
-            StorageList.Add(new Components.StoragePart("Seagate BarraCuda ST4", 159.99, 0, "Storage", "821005", "HDD", 4000, "3.5", "SATA"));
-            StorageList.Add(new Components.StoragePart("Seagate BarraCuda ST6", 219.99, 0, "Storage", "821006", "HDD", 6000, "3.5", "SATA"));
-            StorageList.Add(new Components.StoragePart("Seagate BarraCuda ST8", 277.99, 0, "Storage", "821007", "HDD", 8000, "3.5", "SATA"));
-            StorageList.Add(new Components.StoragePart("Samsung 960 PRO M.2 512GB", 429.99, 0, "Storage", "831001", "HDD", 512, "NVMe", "2280"));
-            StorageList.Add(new Components.StoragePart("Samsung 960 PRO M.2 1TB", 793.99, 0, "Storage", "831002", "HDD", 1000, "NVMe", "2280"));
-            StorageList.Add(new Components.StoragePart("Samsung 960 PRO M.2 2TB", 1649.99, 0, "Storage", "841003", "HDD", 2000, "NVMe", "2280"));
-            StorageList.Add(new Components.StoragePart("Samsung 960 EVO M.2 512GB", 201.99, 0, "Storage", "841004", "SSD", 250, "NVMe", "2280"));
-            StorageList.Add(new Components.StoragePart("Samsung 960 EVO M.2 1TB", 376.99, 0, "Storage", "831005", "SSD", 500, "NVMe", "2280"));
-            StorageList.Add(new Components.StoragePart("Samsung 960 EVO M.2 2TB", 589.99, 0, "Storage", "831006", "SSD", 1000, "NVMe", "2280"));
-            StorageList.Add(new Components.StoragePart("Corsair Force MP500 M.2 2280 120GB", 109.99, 0, "Storage", "841001", "SSD", 120, "NVMe", "2280"));
-            StorageList.Add(new Components.StoragePart("Corsair Force MP500 M.2 2280 240GB", 169.99, 0, "Storage", "841002", "SSD", 240, "NVMe", "2280"));
-            StorageList.Add(new Components.StoragePart("Corsair Force MP500 M.2 2280 480GB", 329.99, 0, "Storage", "841003", "SSD", 480, "NVMe", "2280"));
-            StorageList.Add(new Components.StoragePart("Corsair Force MP500 M.2 2280 960GB", 699.99, 0, "Storage", "841004", "SSD", 960, "NVMe", "2280"));
-            StorageList.Add(new Components.StoragePart("Corsair Force MP500 M.2 2280 400GB", 419.99, 0, "Storage", "841005", "SSD", 400, "NVMe", "2280"));
-            StorageList.Add(new Components.StoragePart("Corsair Force MP500 M.2 2280 8000GB", 899.99, 0, "Storage", "841006", "SSD", 800, "NVMe", "2280"));
+            StorageList.Add(new Components.StoragePart("Seagate BarraCuda ST500DM009", 69.99, 0, "Storage", "821001", "HDD", 500, "3.5", "SATA"));
+            StorageList.Add(new Components.StoragePart("Seagate BarraCuda ST1000DM010", 99.99, 0, "Storage", "821002", "HDD", 1000, "3.5", "SATA"));
+            StorageList.Add(new Components.StoragePart("Seagate BarraCuda ST2000DM006", 89.99, 0, "Storage", "821003", "HDD", 2000, "3.5", "SATA"));
+            StorageList.Add(new Components.StoragePart("Seagate BarraCuda ST3000DM008", 139.99, 0, "Storage", "821004", "HDD", 3000, "3.5", "SATA"));
+            StorageList.Add(new Components.StoragePart("Seagate BarraCuda ST4000DM004", 159.99, 0, "Storage", "821005", "HDD", 4000, "3.5", "SATA"));
+            StorageList.Add(new Components.StoragePart("Seagate BarraCuda ST6000DM003", 219.99, 0, "Storage", "821006", "HDD", 6000, "3.5", "SATA"));
+            StorageList.Add(new Components.StoragePart("Seagate BarraCuda ST8000DM004", 277.99, 0, "Storage", "821007", "HDD", 8000, "3.5", "SATA"));
+            StorageList.Add(new Components.StoragePart("Samsung 960 PRO M.2 512GB", 429.99, 0, "Storage", "831001", "SSD", 512, "NVMe", "M.2 2280"));
+            StorageList.Add(new Components.StoragePart("Samsung 960 PRO M.2 1TB", 793.99, 0, "Storage", "831002", "SSD", 1000, "NVMe", "M.2 2280"));
+            StorageList.Add(new Components.StoragePart("Samsung 960 PRO M.2 2TB", 1649.99, 0, "Storage", "831003", "SSD", 2000, "NVMe", "M.2 2280"));
+            StorageList.Add(new Components.StoragePart("Samsung 960 EVO M.2 512GB", 201.99, 0, "Storage", "831004", "SSD", 512, "NVMe", "M.2 2280"));
+            StorageList.Add(new Components.StoragePart("Samsung 960 EVO M.2 1TB", 376.99, 0, "Storage", "831005", "SSD", 1000, "NVMe", " M.22280"));
+            StorageList.Add(new Components.StoragePart("Samsung 960 EVO M.2 2TB", 589.99, 0, "Storage", "831006", "SSD", 2000, "NVMe", " M.22280"));
+            StorageList.Add(new Components.StoragePart("Corsair Force MP500 M.2 2280 120GB", 109.99, 0, "Storage", "841001", "SSD", 120, "NVMe", "M.2 2280"));
+            StorageList.Add(new Components.StoragePart("Corsair Force MP500 M.2 2280 240GB", 169.99, 0, "Storage", "841002", "SSD", 240, "NVMe", "M.2 2280"));
+            StorageList.Add(new Components.StoragePart("Corsair Force MP500 M.2 2280 480GB", 329.99, 0, "Storage", "841003", "SSD", 480, "NVMe", "M.2 2280"));
+            StorageList.Add(new Components.StoragePart("Corsair Force MP500 M.2 2280 960GB", 699.99, 0, "Storage", "841004", "SSD", 960, "NVMe", "M.2 2280"));
+            StorageList.Add(new Components.StoragePart("Corsair Force MP500 M.2 2280 400GB", 419.99, 0, "Storage", "841005", "SSD", 400, "NVMe", "PCIe"));
+            StorageList.Add(new Components.StoragePart("Corsair Force MP500 M.2 2280 800GB", 899.99, 0, "Storage", "841006", "SSD", 800, "NVMe", "PCIe"));
             // END OF STORAGE
         }
         public static void loadPSU()
@@ -295,8 +295,8 @@ namespace ThePCdb.AppCore
             PSUList.Add(new Components.PSUPart("Corsair AXi Series AX860i", 284.99, 0, "PSU", "413001", "ATX", 860, Components.PSUPart.EightyPlus.Platinum));
             PSUList.Add(new Components.PSUPart("Corsair AXi Series HX1200i", 439.99, 0, "PSU", "413001", "ATX", 1200, Components.PSUPart.EightyPlus.Platinum));
             PSUList.Add(new Components.PSUPart("Corsair Axi Series HAX1600", 639.99, 0, "PSU", "414001", "ATX", 1600, Components.PSUPart.EightyPlus.Titanium));
-            PSUList.Add(new Components.PSUPart("Cooler Master Master V550", 79.99, 0, "PSU", "421001", "sTX", 550, Components.PSUPart.EightyPlus.Bronze));
-            PSUList.Add(new Components.PSUPart("Cooler Master Master V650", 89.99, 0, "PSU", "421002", "sTX", 650, Components.PSUPart.EightyPlus.Bronze));
+            PSUList.Add(new Components.PSUPart("Cooler Master Master V550", 79.99, 0, "PSU", "421001", "SFX", 550, Components.PSUPart.EightyPlus.Bronze));
+            PSUList.Add(new Components.PSUPart("Cooler Master Master V650", 89.99, 0, "PSU", "421002", "SFX", 650, Components.PSUPart.EightyPlus.Bronze));
             PSUList.Add(new Components.PSUPart("Cooler Master Master V750", 99.99, 0, "PSU", "421003", "ATX", 750, Components.PSUPart.EightyPlus.Bronze));
             PSUList.Add(new Components.PSUPart("Cooler Master Master V650", 169.99, 0, "PSU", "422001", "ATX", 650, Components.PSUPart.EightyPlus.Gold));
             PSUList.Add(new Components.PSUPart("Cooler Master Master V750", 199.99, 0, "PSU", "422002", "ATX", 750, Components.PSUPart.EightyPlus.Gold));
@@ -325,8 +325,8 @@ namespace ThePCdb.AppCore
         }
         public static void loadGPU()
         {
-            GPUList.Add(new Components.GPUPart("Asus GeForce GT 1030 2GB", 162.99, 0, "GPU", "310001", 1278, 1531, 2, 24));
-            GPUList.Add(new Components.GPUPart("Asus ROG GeForce GTX 1080Ti Strix", 1419.99, 0, "GPU", "311001", 1597, 1708, 11, 565));
+            GPUList.Add(new Components.GPUPart("Asus GeForce GT 1030 2GB", 162.99, 0, "GPU", "310001", 1278, 1531, 2, 245));
+            GPUList.Add(new Components.GPUPart("Asus ROG GeForce GTX 1080Ti Strix", 1419.99, 0, "GPU", "311001", 1597, 1708, 11, 5655));
             GPUList.Add(new Components.GPUPart("Asus ROG Strix Radeon RX 560", 209.99, 0, "GPU", "311101", 1149, 1197, 4, 907));
             GPUList.Add(new Components.GPUPart("Asus Radeon RX 560 EVO", 219.99, 0, "GPU", "311102", 1149, 1197, 4, 907));
             GPUList.Add(new Components.GPUPart("Asus ROG Radeon RX Vega 64 STRIX", 1269.99, 0, "GPU", "311201", 1590, 1590, 8, 3662));
