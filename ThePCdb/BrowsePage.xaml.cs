@@ -36,7 +36,7 @@ namespace ThePCdb
             CategoryBox.Items.Add("Case");
             CategoryBox.Items.Add("Storage");
             CategoryBox.Items.Add("GPU");
-            CategoryBox.Items.Add("PSu");
+            CategoryBox.Items.Add("PSU");
             PartBox.Items.Add("No Category Selected");  
 
         }
