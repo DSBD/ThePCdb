@@ -8,21 +8,15 @@ namespace ThePCdb.AppCore
 {
     public static class Warehouse
     {
-
         //TODO: Store All Components
         //TODO: Program to Access Component Details by Category
         //TODO: Methods for Each Component
-
         static public List<Components.CPUPart> CPUList { get; set; }
         static public List<Components.MotherboardPart> MotherboardList { get; set; }
         static public List<Components.RAMPart> RAMLIST { get; set; }
         static public List<Components.CoolingPart> CoolingList { get; set; }
-
         static public List<Components.CasePart> CaseList { get; set; }
-
         static public List<Components.StoragePart> StorageList { get; set; }
-
-        
         static Warehouse()
         {
             CPUList = new List<Components.CPUPart>();
@@ -238,7 +232,8 @@ namespace ThePCdb.AppCore
             CaseList.Add(new Components.CasePart("Corsair Obsidian 500D", 184.99, 0, "Case", "641003", "ATX", 5, 7, true, true, true));
             CaseList.Add(new Components.CasePart("Corsair Carbide Series 275R", 99.99, 0, "Case", "641004", "ATX", 4, 7, true, true, true));
             CaseList.Add(new Components.CasePart("Corsair Carbide series SPEC-OMEGA", 128.99, 0, "Case", "641005", "ATX", 4, 7, true, true, true));
-        }// END OF CASES
+            // END OF CASES
+        }
         public static void loadStorage()
         {
             StorageList.Add(new Components.StoragePart("WD Blue 3D NAND 250GB PC SSD", 105.99, 0, "Storage", "811001", "SSD", 250, "2.5", "SATA"));
@@ -275,6 +270,5 @@ namespace ThePCdb.AppCore
             StorageList.Add(new Components.StoragePart("Corsair Force MP500 M.2 2280 8000GB", 899.99, 0, "Storage", "841006", "SSD", 800, "NVMe", "2280"));
             // END OF STORAGE
         }
-
     }
 }
