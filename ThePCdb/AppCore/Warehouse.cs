@@ -283,23 +283,44 @@ namespace ThePCdb.AppCore
             PSUList.Add(new Components.PSUPart("Corsair CX-M Series CX650W 80 Plus BRONZE", 99.99, 0, "PSU", "411002", "ATX", 50, Components.PSUPart.EightyPlus.Bronze));
             PSUList.Add(new Components.PSUPart("Corsair CX750M 80 Plus BRONZE", 124.99, 0, "PSU", "411003", "ATX", 750, Components.PSUPart.EightyPlus.Bronze));
             PSUList.Add(new Components.PSUPart("Corsair CX850M 80 Plus BRONZE", 149.99, 0, "PSU", "411004", "ATX", 850, Components.PSUPart.EightyPlus.Bronze));
-
             PSUList.Add(new Components.PSUPart("Corsair CX-M RMx Series RM750x", 149.99, 0, "PSU", "412001", "ATX", 750, Components.PSUPart.EightyPlus.Gold));
             PSUList.Add(new Components.PSUPart("Corsair CX-M RMx Series RM850x", 164.99, 0, "PSU", "412002", "ATX", 850, Components.PSUPart.EightyPlus.Gold));
             PSUList.Add(new Components.PSUPart("Corsair SF Series SF450", 114.99, 0, "PSU", "412003", "ATX", 450, Components.PSUPart.EightyPlus.Gold));
             PSUList.Add(new Components.PSUPart("Corsair SF Series SF600", 179.99, 0, "PSU", "412004", "ATX", 600, Components.PSUPart.EightyPlus.Gold));
-
             PSUList.Add(new Components.PSUPart("Corsair HX Series HX750", 174.99, 0, "PSU", "413001", "ATX", 750, Components.PSUPart.EightyPlus.Platinum));
-            PSUList.Add(new Components.PSUPart("Corsair HX Series HX850", 214.99, 0, "PSU", "413001", "ATX", 750, Components.PSUPart.EightyPlus.Platinum));
-            PSUList.Add(new Components.PSUPart("Corsair HX Series HX1000", 264.99, 0, "PSU", "413001", "ATX", 750, Components.PSUPart.EightyPlus.Platinum));
-            PSUList.Add(new Components.PSUPart("Corsair HX Series HX1200", 309.99, 0, "PSU", "413001", "ATX", 750, Components.PSUPart.EightyPlus.Platinum));
-            PSUList.Add(new Components.PSUPart("Corsair AXi Series AX860i", 284.99, 0, "PSU", "413001", "ATX", 750, Components.PSUPart.EightyPlus.Platinum));
-            PSUList.Add(new Components.PSUPart("Corsair AXi Series HX1200i", 439.99, 0, "PSU", "413001", "ATX", 750, Components.PSUPart.EightyPlus.Platinum));
-
-
-
-
-
+            PSUList.Add(new Components.PSUPart("Corsair HX Series HX850", 214.99, 0, "PSU", "413001", "ATX", 850, Components.PSUPart.EightyPlus.Platinum));
+            PSUList.Add(new Components.PSUPart("Corsair HX Series HX1000", 264.99, 0, "PSU", "413001", "ATX", 1000, Components.PSUPart.EightyPlus.Platinum));
+            PSUList.Add(new Components.PSUPart("Corsair HX Series HX1200", 309.99, 0, "PSU", "413001", "ATX", 1200, Components.PSUPart.EightyPlus.Platinum));
+            PSUList.Add(new Components.PSUPart("Corsair AXi Series AX860i", 284.99, 0, "PSU", "413001", "ATX", 860, Components.PSUPart.EightyPlus.Platinum));
+            PSUList.Add(new Components.PSUPart("Corsair AXi Series HX1200i", 439.99, 0, "PSU", "413001", "ATX", 1200, Components.PSUPart.EightyPlus.Platinum));
+            PSUList.Add(new Components.PSUPart("Corsair Axi Series HAX1600", 639.99, 0, "PSU", "414001", "ATX", 1600, Components.PSUPart.EightyPlus.Titanium));
+            PSUList.Add(new Components.PSUPart("Cooler Master Master V550", 79.99, 0, "PSU", "421001", "ATX", 550, Components.PSUPart.EightyPlus.Bronze));
+            PSUList.Add(new Components.PSUPart("Cooler Master Master V650", 89.99, 0, "PSU", "421002", "ATX", 650, Components.PSUPart.EightyPlus.Bronze));
+            PSUList.Add(new Components.PSUPart("Cooler Master Master V750", 99.99, 0, "PSU", "421003", "ATX", 750, Components.PSUPart.EightyPlus.Bronze));
+            PSUList.Add(new Components.PSUPart("Cooler Master Master V650", 169.99, 0, "PSU", "422001", "ATX", 650, Components.PSUPart.EightyPlus.Gold));
+            PSUList.Add(new Components.PSUPart("Cooler Master Master V750", 199.99, 0, "PSU", "422002", "ATX", 750, Components.PSUPart.EightyPlus.Gold));
+            PSUList.Add(new Components.PSUPart("Cooler Master Master V850", 232.99, 0, "PSU", "422003", "ATX", 850, Components.PSUPart.EightyPlus.Gold));
+            PSUList.Add(new Components.PSUPart("Cooler Master Master V1000", 319.99, 0, "PSU", "422004", "ATX", 1000, Components.PSUPart.EightyPlus.Gold));
+            PSUList.Add(new Components.PSUPart("Cooler Master Master V1200 Platinum", 399.99, 0, "PSU", "423001", "ATX", 1200, Components.PSUPart.EightyPlus.Platinum));
+            PSUList.Add(new Components.PSUPart("Cooler Master Master V1200 MIJ", 1399.99, 0, "PSU", "424001", "ATX", 1200, Components.PSUPart.EightyPlus.Titanium));
+            PSUList.Add(new Components.PSUPart("EVGA 550 B3", 89.99, 0, "PSU", "431001", "ATX", 550, Components.PSUPart.EightyPlus.Bronze));
+            PSUList.Add(new Components.PSUPart("EVGA 650 B3", 109.99, 0, "PSU", "431002", "ATX", 650, Components.PSUPart.EightyPlus.Bronze));
+            PSUList.Add(new Components.PSUPart("EVGA 750 B3", 114.99, 0, "PSU", "431003", "ATX", 750, Components.PSUPart.EightyPlus.Bronze));
+            PSUList.Add(new Components.PSUPart("EVGA 850 B3", 149.99, 0, "PSU", "431004", "ATX", 850, Components.PSUPart.EightyPlus.Bronze));
+            PSUList.Add(new Components.PSUPart("EVGA SuperNOVA 650 G3", 164.99, 0, "PSU", "432001", "ATX", 650, Components.PSUPart.EightyPlus.Gold));
+            PSUList.Add(new Components.PSUPart("EVGA SuperNOVA 750 G3", 179.99, 0, "PSU", "432002", "ATX", 750, Components.PSUPart.EightyPlus.Gold));
+            PSUList.Add(new Components.PSUPart("EVGA SuperNOVA 850 G3", 209.99, 0, "PSU", "432003", "ATX", 850, Components.PSUPart.EightyPlus.Gold));
+            PSUList.Add(new Components.PSUPart("EVGA SuperNOVA 1000 G3", 299.99, 0, "PSU", "432004", "ATX", 1000, Components.PSUPart.EightyPlus.Gold));
+            PSUList.Add(new Components.PSUPart("EVGA SuperNOVA 750 P2", 209.99, 0, "PSU", "433001", "ATX", 750, Components.PSUPart.EightyPlus.Platinum));
+            PSUList.Add(new Components.PSUPart("EVGA SuperNOVA 850 P2", 306.99, 0, "PSU", "433002", "ATX", 850, Components.PSUPart.EightyPlus.Platinum));
+            PSUList.Add(new Components.PSUPart("EVGA SuperNOVA 1000 P2", 352.99, 0, "PSU", "433003", "ATX", 1000, Components.PSUPart.EightyPlus.Platinum));
+            PSUList.Add(new Components.PSUPart("EVGA SuperNOVA 1200 P2", 479.99, 0, "PSU", "433004", "ATX", 1200, Components.PSUPart.EightyPlus.Platinum));
+            PSUList.Add(new Components.PSUPart("EVGA SuperNOVA 1600 P2", 579.99, 0, "PSU", "433005", "ATX", 1600, Components.PSUPart.EightyPlus.Platinum));
+            PSUList.Add(new Components.PSUPart("EVGA SuperNOVA 750 T2", 387.99, 0, "PSU", "434001", "ATX", 750, Components.PSUPart.EightyPlus.Titanium));
+            PSUList.Add(new Components.PSUPart("EVGA SuperNOVA 850 T2", 349.99, 0, "PSU", "434002", "ATX", 850, Components.PSUPart.EightyPlus.Titanium));
+            PSUList.Add(new Components.PSUPart("EVGA SuperNOVA 1000 T2", 459.99, 0, "PSU", "434003", "ATX", 1000, Components.PSUPart.EightyPlus.Titanium));
+            PSUList.Add(new Components.PSUPart("EVGA SuperNOVA 1600 T2", 664.99, 0, "PSU", "434004", "ATX", 1600, Components.PSUPart.EightyPlus.Titanium));
+            //LOAD PSU
         }
         public static void loadGPU()
         {
