@@ -15,7 +15,25 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Grid>
-            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Foreground="White" FontSize="60" Text="Part Info" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Row="1" x:Name="PartName" FontSize="20" FontFamily="Consolas" Foreground="White" Height="60" Margin="10"/>
+            <TextBlock Grid.Row="2" x:Name="PartPrice" FontSize="20" FontFamily="Consolas" Foreground="White" Height="60" Margin="10"/>
+            <TextBlock Grid.Row="3" x:Name="PartRating" FontSize="20" FontFamily="Consolas" Foreground="White" Height="60" Margin="10"/>
+            <TextBlock Grid.Row="4" x:Name="PartType" FontSize="20" FontFamily="Consolas" Foreground="White" Height="60" Margin="10"/>
+            <TextBlock Grid.Row="5" x:Name="PartDetails1" FontSize="20" FontFamily="Consolas" Foreground="White" Height="60" Margin="10"/>
+            <TextBlock Grid.Row="6" x:Name="PartDetails2" FontSize="20" FontFamily="Consolas" Foreground="White" Height="60" Margin="10"/>
+            <Button Grid.Row="7" Content="Back" Foreground="White" FontSize="24" Width="250" Height="100" HorizontalAlignment="Center" Click="Button_Click" VerticalAlignment="Bottom" Margin="50"/>
         </Grid>
     </Grid>
 </Page>
