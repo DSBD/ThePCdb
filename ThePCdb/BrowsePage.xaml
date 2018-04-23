@@ -22,7 +22,7 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <!-- Made Change to Push -->
+
             <TextBlock Foreground="White" FontSize="60" Text="Browse Parts" HorizontalAlignment="Center" Height="80" Margin="20" Grid.Row="0"/>
             <ComboBox x:Name="CategoryBox" Header="Category" Height="89" Width="400" Foreground="White" FontFamily="Consolas" FontSize="24" Grid.Row="1" HorizontalAlignment="Center"/>
             <Button Content="Select" Grid.Row="2" HorizontalAlignment="Center" Height="70" Width="250" Grid.RowSpan="1"  Foreground="White" FontSize="24" Click="Button_Click_1" Margin="20"/>

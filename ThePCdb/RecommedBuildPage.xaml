@@ -22,11 +22,18 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
+            
             <TextBlock Grid.Row="0" Foreground="White" FontSize="50" Text="Recommend Build" HorizontalAlignment="Center"/>
-            <TextBox Grid.Row="1" Header="Enter Min. Budget:" Foreground="White" FontFamily="Consolas" FontSize="24" Width="300"/>
-            <TextBox Grid.Row="2" Header="Enter Max Budget:" Foreground="White" FontFamily="Consolas" FontSize="24" Width="300"/>
-            <Button Grid.Row="3" Grid.ColumnSpan="2" Content="Find a Build!" Foreground="White" FontSize="24" Width="250" Height="100" Margin="0,25,0,0" HorizontalAlignment="Center"/>
-            <Button Grid.Row="4" Grid.ColumnSpan="2" Content="Back" Foreground="White" FontSize="24" Width="250" Height="100" Margin="0,25,0,0" HorizontalAlignment="Center" Click="Button_Click"/>
+            <StackPanel Grid.Row="1" Margin="20">
+                <TextBlock x:Name="txt_MinBudget" Text="  Enter Min. Budget:" Foreground="White" FontFamily="Consolas" FontSize="24"/>
+                <TextBox FontFamily="Consolas" FontSize="24" Width="400" Margin="20"/>
+            </StackPanel>
+            <StackPanel Grid.Row="2" Margin="20">
+                <TextBlock x:Name="txt_MaxBudget" Text="  Enter Max Budget:" Foreground="White" FontFamily="Consolas" FontSize="24"/>
+                <TextBox FontFamily="Consolas" FontSize="24" Width="400" Margin="20"/>
+            </StackPanel>
+            <Button Grid.Row="3" Content="Find a Build!" Foreground="White" FontSize="24" Width="250" Height="100" Margin="0,25,0,0" HorizontalAlignment="Center"/>
+            <Button Grid.Row="4" Content="Back" Foreground="White" FontSize="24" Width="250" Height="100" Margin="0,25,0,0" HorizontalAlignment="Center" Click="Button_Click"/>
         </Grid>
     </Grid>
 </Page>
