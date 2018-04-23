@@ -130,6 +130,7 @@
     <None Include="ThePCdb_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AppCore\PartCategories.txt" />
     <Content Include="Assets\BrowseLogo.png" />
     <Content Include="Assets\BuildLogo.png" />
     <Content Include="Assets\BuildLogo2.png" />
