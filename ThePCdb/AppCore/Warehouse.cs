@@ -295,8 +295,8 @@ namespace ThePCdb.AppCore
             PSUList.Add(new Components.PSUPart("Corsair AXi Series AX860i", 284.99, 0, "PSU", "413001", "ATX", 860, Components.PSUPart.EightyPlus.Platinum));
             PSUList.Add(new Components.PSUPart("Corsair AXi Series HX1200i", 439.99, 0, "PSU", "413001", "ATX", 1200, Components.PSUPart.EightyPlus.Platinum));
             PSUList.Add(new Components.PSUPart("Corsair Axi Series HAX1600", 639.99, 0, "PSU", "414001", "ATX", 1600, Components.PSUPart.EightyPlus.Titanium));
-            PSUList.Add(new Components.PSUPart("Cooler Master Master V550", 79.99, 0, "PSU", "421001", "ATX", 550, Components.PSUPart.EightyPlus.Bronze));
-            PSUList.Add(new Components.PSUPart("Cooler Master Master V650", 89.99, 0, "PSU", "421002", "ATX", 650, Components.PSUPart.EightyPlus.Bronze));
+            PSUList.Add(new Components.PSUPart("Cooler Master Master V550", 79.99, 0, "PSU", "421001", "sTX", 550, Components.PSUPart.EightyPlus.Bronze));
+            PSUList.Add(new Components.PSUPart("Cooler Master Master V650", 89.99, 0, "PSU", "421002", "sTX", 650, Components.PSUPart.EightyPlus.Bronze));
             PSUList.Add(new Components.PSUPart("Cooler Master Master V750", 99.99, 0, "PSU", "421003", "ATX", 750, Components.PSUPart.EightyPlus.Bronze));
             PSUList.Add(new Components.PSUPart("Cooler Master Master V650", 169.99, 0, "PSU", "422001", "ATX", 650, Components.PSUPart.EightyPlus.Gold));
             PSUList.Add(new Components.PSUPart("Cooler Master Master V750", 199.99, 0, "PSU", "422002", "ATX", 750, Components.PSUPart.EightyPlus.Gold));
@@ -325,7 +325,52 @@ namespace ThePCdb.AppCore
         }
         public static void loadGPU()
         {
-            
-        }
+            GPUList.Add(new Components.GPUPart("Asus GeForce GT 1030 2GB", 162.99, 0, "GPU", "310001", 1278, 1531, 2, 24));
+            GPUList.Add(new Components.GPUPart("Asus ROG GeForce GTX 1080Ti Strix", 1419.99, 0, "GPU", "311001", 1597, 1708, 11, 565));
+            GPUList.Add(new Components.GPUPart("Asus ROG Strix Radeon RX 560", 209.99, 0, "GPU", "311101", 1149, 1197, 4, 907));
+            GPUList.Add(new Components.GPUPart("Asus Radeon RX 560 EVO", 219.99, 0, "GPU", "311102", 1149, 1197, 4, 907));
+            GPUList.Add(new Components.GPUPart("Asus ROG Radeon RX Vega 64 STRIX", 1269.99, 0, "GPU", "311201", 1590, 1590, 8, 3662));
+            GPUList.Add(new Components.GPUPart("Asus ROG Radeon RX Vega 56 STRIX", 1084.99, 0, "GPU", "311301", 1297, 1573, 8, 3502));
+            GPUList.Add(new Components.GPUPart("Asus ROG GeForce GTX 1080 STRIX", 1049.99, 0, "GPU", "312001", 1695, 1835, 8, 4152));
+            GPUList.Add(new Components.GPUPart("Asus ROG GeForce GTX 1070Ti STRIX", 864.99, 0, "GPU", "313001", 1683, 1759, 8, 3153));
+            GPUList.Add(new Components.GPUPart("Asus ROG GeForce GTX 1070Ti Cerberus", 819.99, 0, "GPU", "313002", 1607, 1746, 8, 3153));
+            GPUList.Add(new Components.GPUPart("Asus ROG GeForce GTX 1070 STRIX", 779.99, 0, "GPU", "314001", 1607, 1746, 8, 3153));
+            GPUList.Add(new Components.GPUPart("Asus ROG GeForce GTX 1070 STRIX", 779.99, 0, "GPU", "314001", 1607, 1746, 8, 3153));
+            GPUList.Add(new Components.GPUPart("Asus ROG GeForce GTX 1060 STRIX", 519.99, 0, "GPU", "315001", 1645, 1873, 6, 2645));
+            GPUList.Add(new Components.GPUPart("Asus ROG GeForce GTX 1060 3GB", 379.99, 0, "GPU", "315003", 1645, 1873, 3, 2604));
+            GPUList.Add(new Components.GPUPart("Asus ROG GeForce GTX 1050Ti STRIX", 329.99, 0, "GPU", "316001", 1392, 1506, 4, 1522));
+            GPUList.Add(new Components.GPUPart("AsusGeForce GTX 1050Ti CERBERUS", 269.99, 0, "GPU", "365003", 1392, 1506, 4, 1522));
+            GPUList.Add(new Components.GPUPart("Asus  GeForce GTX 1050 CERBERUS", 247.99, 0, "GPU", "317001", 1404, 1518, 4, 1522));
+            GPUList.Add(new Components.GPUPart("Asus ROG Strix Radeon RX 580", 569.99, 0, "GPU", "318001", 1380, 1380, 8, 3579));
+            GPUList.Add(new Components.GPUPart("Gigabyte GTX 1080Ti Gaming", 1299.99, 0, "GPU", "321001", 1544, 1544, 11, 5418));
+            GPUList.Add(new Components.GPUPart("Gigabyte GTX 1080 G1 Gaming", 799.99, 0, "GPU", "322001", 1721, 1860, 8, 3831));
+            GPUList.Add(new Components.GPUPart("Gigabyte GTX 1070 TI AORUS", 774.99, 0, "GPU", "323001", 1607, 1771, 8, 3513));
+            GPUList.Add(new Components.GPUPart("Gigabyte GTX 1070", 624.99, 0, "GPU", "324001", 1632, 1860, 8, 3483));
+            GPUList.Add(new Components.GPUPart("Gigabyte GTX 1060 Mini 6G", 409.99, 0, "GPU", "325003", 1645, 1873, 6, 2604));
+            GPUList.Add(new Components.GPUPart("Gigabyte GTX 1060 AORUS", 514.99, 0, "GPU", "325004", 1645, 1873, 6, 2604));
+            GPUList.Add(new Components.GPUPart("Gigabyte GTX 1050 TI OC", 298.99, 0, "GPU", "326001", 1392, 1506, 4, 1522));
+            GPUList.Add(new Components.GPUPart("Gigabyte GTX 1050 Gaming 2G", 272.99, 0, "GPU", "327001", 1404, 1518, 4, 941));
+            GPUList.Add(new Components.GPUPart("Gigabyte AORUS Radeon RX 580", 454.99, 0, "GPU", "328001", 1380, 1380, 8, 3579));
+            GPUList.Add(new Components.GPUPart("Gigabyte AORUS Radeon RX 570", 394.99, 0, "GPU", "329002", 1295, 1295, 8, 2159));
+            GPUList.Add(new Components.GPUPart("MSI GeForce GT 1030 Aero", 137.99, 0, "GPU", "330001", 1278, 1531, 2, 244));
+            GPUList.Add(new Components.GPUPart("MSI GTX 1080Ti", 1272.99, 0, "GPU", "331001", 1569, 1569, 11, 5375));
+            GPUList.Add(new Components.GPUPart("MSI Radeon RX 560 Aero", 294.74, 0, "GPU", "331101", 1149, 1197, 4, 907));
+            GPUList.Add(new Components.GPUPart("MSI Radeon RX Vega 56", 884.99, 0, "GPU", "331301", 1297, 1573, 8, 3506));
+            GPUList.Add(new Components.GPUPart("MSI GeFore GTX 1080 DUKE", 834.99, 0, "GPU", "332003", 1708, 1847, 8, 3565));
+            GPUList.Add(new Components.GPUPart("MSI GeFore GTX 1070 Armor", 736.99, 0, "GPU", "333004", 1607, 1683, 8, 3513));
+            GPUList.Add(new Components.GPUPart("MSI GeFore GTX 1070 Aero ITX", 899.99, 0, "GPU", "334002", 1632, 1860, 8, 3438));
+            GPUList.Add(new Components.GPUPart("MSI GeFore GTX 1060 ARMOR 6G", 575.99, 0, "GPU", "335004", 1645, 1873, 6, 2604));
+            GPUList.Add(new Components.GPUPart("MSI GeFore GTX 1050 Ti Gaming X", 304.99, 0, "GPU", "336001", 1392, 1506, 4, 1522));
+            GPUList.Add(new Components.GPUPart("MSI GeFore GTX 1050 Aero ITX", 238.99, 0, "GPU", "337002", 1404, 1518, 4, 941));
+            GPUList.Add(new Components.GPUPart("MSI Radeon RX 580 ARMOR MK2", 474.99, 0, "GPU", "338001", 1380, 1380, 8, 3579));
+            GPUList.Add(new Components.GPUPart("MSI Radeon RX 570 ARMOR MK2", 444.99, 0, "GPU", "339001", 1295, 1295, 8, 2519));
+            GPUList.Add(new Components.GPUPart("EVGA GeFore GTX 1080 TI SC2 Hybrid", 1549.99, 0, "GPU", "341003", 1556, 1670, 8, 6444));
+            GPUList.Add(new Components.GPUPart("EvGA GeFore GTX 1080 FTW Gaming", 869.99, 0, "GPU", "342002", 1721, 1860, 8, 3565));
+            GPUList.Add(new Components.GPUPart("EVGA GeFore GTX 1070 Ti FTW2", 829.99, 0, "GPU", "343002", 1607, 1683, 8, 3513));
+            GPUList.Add(new Components.GPUPart("EVGA GeFore GTX 1070 Hybrid Gaming", 751.99, 0, "GPU", "344002", 1632, 1860, 8, 3438));
+            GPUList.Add(new Components.GPUPart("EVGA GeFore GTX 1060 FTW+ Gaming", 495.99, 0, "GPU", "345003", 1645, 1832, 6, 2604));
+            GPUList.Add(new Components.GPUPart("EVGA GeFore GTX 1050 Ti SSC Gaming", 334.99, 0, "GPU", "346002", 1392, 1506, 4, 1522));
+            GPUList.Add(new Components.GPUPart("EVGA GeFore GTX 1050 FTW Gaming", 249.99, 0, "GPU", "347003", 1404, 1518, 4, 941));
+        } // Steven reaction to finishing the database (╯°□°）╯︵ ┻━┻
     }
 }
