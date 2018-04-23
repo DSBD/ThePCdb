@@ -22,6 +22,8 @@ namespace ThePCdb
     /// </summary>
     public sealed partial class PartInfo : Page
     {
+        Components.Part selectedPart;
+
         public PartInfo()
         {
             this.InitializeComponent();
@@ -30,6 +32,14 @@ namespace ThePCdb
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(BrowsePage));
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            selectedPart = (Components.Part)e.Parameter;
+            PartName.Text = selectedPart.Name;
+            PartPrice.Text = selectedPart.Price.ToString();
+
         }
     }
 }
