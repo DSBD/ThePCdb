@@ -88,6 +88,10 @@ namespace ThePCdb
                     PartBox.Items.Add(Storage.Name);
                 }
             }
+            else
+            {
+                PartBox.Items.Add("No Category Selected");
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
