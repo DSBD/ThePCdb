@@ -14,7 +14,29 @@
                 <GradientStop Color="#FF1452D6" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBlock Foreground="White" FontSize="60" Text="Custom Build" HorizontalAlignment="Center"/>
-        <Button Grid.Row="4" Grid.ColumnSpan="2" Content="Back" Foreground="White" FontSize="24" Width="250" Height="100" HorizontalAlignment="Center" Click="Button_Click"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="1" Foreground="White" FontSize="60" Text="Custom Build" HorizontalAlignment="Center"/>
+            <ComboBox Grid.Row="2" x:Name="CPUBox" Header="CPU" Foreground="White" FontFamily="Consolas" FontSize="20" HorizontalAlignment="Center" Width="300"/>
+            <ComboBox Grid.Row="3" x:Name="MotherBoardBox" Header="MotherBoard" Foreground="White" FontFamily="Consolas" FontSize="20" HorizontalAlignment="Center" Width="300"/>
+            <ComboBox Grid.Row="4" x:Name="RAMBox" Header="RAM" Foreground="White" FontFamily="Consolas" FontSize="20" HorizontalAlignment="Center" Width="300"/>
+            <ComboBox Grid.Row="5" x:Name="CoolingBox" Header="Cooling Part" Foreground="White" FontFamily="Consolas" FontSize="20" HorizontalAlignment="Center" Width="300"/>
+            <ComboBox Grid.Row="6" x:Name="CaseBox" Header="Case" Foreground="White" FontFamily="Consolas" FontSize="20" HorizontalAlignment="Center" Width="300"/>
+            <ComboBox Grid.Row="7" x:Name="StorageBox" Header="Storage" Foreground="White" FontFamily="Consolas" FontSize="20" HorizontalAlignment="Center" Width="300"/>
+            <ComboBox Grid.Row="8" x:Name="GPUBox" Header="GPU" Foreground="White" FontFamily="Consolas" FontSize="20" HorizontalAlignment="Center" Width="300"/>
+            <ComboBox Grid.Row="9" x:Name="PSUBox" Header="PSU" Foreground="White" FontFamily="Consolas" FontSize="20" HorizontalAlignment="Center" Width="300"/>
+            <Button Grid.Row="10" Content="Back" Foreground="White" FontSize="24" Width="250" Height="50" HorizontalAlignment="Center" Click="Button_Click"/>
+        </Grid>
     </Grid>
 </Page>
