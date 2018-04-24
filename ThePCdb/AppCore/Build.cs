@@ -16,7 +16,12 @@ namespace ThePCdb.AppCore
         public Components.PSUPart PSU { get; set; }
         public Components.RAMPart RAMKit { get; set; }
         public Components.StoragePart Storage { get; set; }
+        public double Price { get; set; }
 
+        public Build()
+        {
+
+        }
         public Build(Components.CasePart _case, Components.CoolingPart cooling, Components.CPUPart cpu, Components.GPUPart gpu, Components.MotherboardPart motherboard, Components.PSUPart psu, Components.RAMPart ram, Components.StoragePart storage)
         {
             Case = _case;
@@ -27,6 +32,7 @@ namespace ThePCdb.AppCore
             PSU = psu;
             RAMKit = ram;
             Storage = storage;
+            Price = Case.Price + Cooling.Price + CPU.Price + GPU.Price + Motherboard.Price + PSU.Price + RAMKit.Price + Storage.Price;
         }
     }
 }
