@@ -49,7 +49,18 @@ namespace ThePCdb.AppCore
             buildList.Add(generateBuildParts("633001", "0", "111007", "311101", "231006", "421001", "521003", "821001"));
             buildList.Add(generateBuildParts("633001", "0", "111006", "317001", "231004", "421001", "521003", "821001"));
             buildList.Add(generateBuildParts("621002", "711005", "111006", "331004", "231004", "421001", "511001", "821001"));
-
+            buildList.Add(generateBuildParts("611004", "711005", "123005", "331004", "231004", "421002", "533001", "811001"));
+            buildList.Add(generateBuildParts("611005", "712043", "111003", "315001", "211009", "431003", "523002", "811001"));
+            buildList.Add(generateBuildParts("611002", "712001", "111003", "318001", "211009", "412001", "523002", "811006"));
+            buildList.Add(generateBuildParts("631002", "712001", "111003", "314010", "211005", "412001", "523002", "831004"));
+            buildList.Add(generateBuildParts("631002", "712001", "111001", "314010", "211005", "412001", "512001", "831004"));
+            buildList.Add(generateBuildParts("631002", "712001", "111001", "314001", "211005", "412001", "524001", "831004"));
+            buildList.Add(generateBuildParts("631002", "742002", "112007", "342002", "212006", "412001", "524001", "831004"));
+            buildList.Add(generateBuildParts("641002", "742002", "112007", "312001", "212005", "412001", "524001", "831004"));
+            buildList.Add(generateBuildParts("641002", "742002", "112007", "312001", "212005", "412002", "524001", "831004"));
+            buildList.Add(generateBuildParts("641002", "742002", "112007", "312001", "212002", "413001", "524001", "831005"));
+            buildList.Add(generateBuildParts("641002", "742002", "112005", "312001", "212005", "412002", "524001", "831004"));
+            buildList.Add(generateBuildParts("641002", "742001", "112001", "311001", "212001", "424001", "528001", "831003"));
         }
 
         public static Build generateBuildParts(string CaseID, string CoolingID, string CPUID, string GPUID, string MotherboardID,string PSUID,string RAMID, string StorageID)
@@ -279,7 +290,7 @@ namespace ThePCdb.AppCore
             CoolingList.Add(new Components.CoolingPart("Cooler Master MasterLiqUid ML240R", 159.99, 0, "Cooling", "712001", "AIO", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
             CoolingList.Add(new Components.CoolingPart("Cooler Master MasterLiquid lite 240", 75.99, 0, "Cooling", "712002", "AIO", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
             CoolingList.Add(new Components.CoolingPart("Cooler Master MasterLiquid lite ML240L RGB", 84.99, 0, "Cooling", "712003", "AIO", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
-            CoolingList.Add(new Components.CoolingPart("Cooler Master MasterLiquid Lite ML120L RGB", 79.99, 0, "Cooling", "7120043", "AIO", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
+            CoolingList.Add(new Components.CoolingPart("Cooler Master MasterLiquid Lite ML120L RGB", 79.99, 0, "Cooling", "712043", "AIO", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
             CoolingList.Add(new Components.CoolingPart("Cooler Master MasterLiquid ML120R", 129.99, 0, "Cooling", "712005", "AIO", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
             CoolingList.Add(new Components.CoolingPart("Cooler Master HydroSeries H100i V2", 149.99, 0, "Cooling", "722001", "AIO", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
             CoolingList.Add(new Components.CoolingPart("Cooler Master HydroSeries H150i PRO RGB", 214.99, 0, "Cooling", "722002", "AIO", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
@@ -296,10 +307,10 @@ namespace ThePCdb.AppCore
         }
         public static void loadCase()
         {
-            CaseList.Add(new Components.CasePart("NZXT S349 Elite Matte White Steal", 139.99, 0, "Case", "611001", "ATX", 5, 7, true, true, true));
-            CaseList.Add(new Components.CasePart("NZXT S340 Elite Matte Black Steal", 99.99, 0, "Case", "611002", "ATX", 4, 7, true, true, true));
-            CaseList.Add(new Components.CasePart("NZXT S340 Elite Glossy White Steal", 99.99, 0, "Case", "611003", "ATX", 4, 7, true, true, true));
-            CaseList.Add(new Components.CasePart("NZXT S340 Elite Matte Black Steal", 139.99, 0, "Case", "611004", "ATX", 5, 7, true, true, true));
+            CaseList.Add(new Components.CasePart("NZXT S349 Elite Matte White Steel", 139.99, 0, "Case", "611001", "ATX", 5, 7, true, true, true));
+            CaseList.Add(new Components.CasePart("NZXT S340 Elite Matte Black Steel", 99.99, 0, "Case", "611002", "ATX", 4, 7, true, true, true));
+            CaseList.Add(new Components.CasePart("NZXT S340 Elite Glossy White Steel", 99.99, 0, "Case", "611003", "ATX", 4, 7, true, true, true));
+            CaseList.Add(new Components.CasePart("NZXT S340 Elite Glossy Black Steel", 99.99, 0, "Case", "611004", "ATX", 5, 7, true, true, true));
             CaseList.Add(new Components.CasePart("NZXT Noctis 450", 189.99, 0, "Case", "621005", "ATX", 8, 7, true, true, true));
             CaseList.Add(new Components.CasePart("Fractal Design Meshify C - TG", 119.99, 0, "Case", "611005", "ATX", 5, 7, true, true, true));
             CaseList.Add(new Components.CasePart("Fractal Design Meshify C Black", 119.99, 0, "Case", "621001", "ATX", 5, 7, true, true, true));
@@ -413,7 +424,7 @@ namespace ThePCdb.AppCore
             GPUList.Add(new Components.GPUPart("Asus ROG GeForce GTX 1070Ti STRIX", 864.99, 0, "GPU", "313001", 1683, 1759, 8, 3153));
             GPUList.Add(new Components.GPUPart("Asus ROG GeForce GTX 1070Ti Cerberus", 819.99, 0, "GPU", "313002", 1607, 1746, 8, 3153));
             GPUList.Add(new Components.GPUPart("Asus ROG GeForce GTX 1070 STRIX", 779.99, 0, "GPU", "314001", 1607, 1746, 8, 3153));
-            GPUList.Add(new Components.GPUPart("Asus ROG GeForce GTX 1070 STRIX", 779.99, 0, "GPU", "314001", 1607, 1746, 8, 3153));
+            GPUList.Add(new Components.GPUPart("Asus ROG GeForce GTX 1070 STRIX", 624.99, 0, "GPU", "314010", 1607, 1746, 8, 3153));
             GPUList.Add(new Components.GPUPart("Asus ROG GeForce GTX 1060 STRIX", 519.99, 0, "GPU", "315001", 1645, 1873, 6, 2645));
             GPUList.Add(new Components.GPUPart("Asus ROG GeForce GTX 1060 3GB", 379.99, 0, "GPU", "315003", 1645, 1873, 3, 2604));
             GPUList.Add(new Components.GPUPart("Asus ROG GeForce GTX 1050Ti STRIX", 329.99, 0, "GPU", "316001", 1392, 1506, 4, 1522));
