@@ -8,14 +8,15 @@ namespace ThePCdb.AppCore
 {
     public class Build
     {
-        protected Components.CasePart Case { get; set; }
-        protected Components.CoolingPart Cooling { get; set; }
-        protected Components.CPUPart CPU { get; set; }
-        protected Components.GPUPart GPU { get; set; }
-        protected Components.MotherboardPart Motherboard { get; set; }
-        protected Components.PSUPart PSU { get; set; }
-        protected Components.RAMPart RAMKit { get; set; }
-        protected Components.StoragePart Storage { get; set; }
+        public Components.CasePart Case { get; set; }
+        public Components.CoolingPart Cooling { get; set; }
+        public Components.CPUPart CPU { get; set; }
+        public Components.GPUPart GPU { get; set; }
+        public Components.MotherboardPart Motherboard { get; set; }
+        public Components.PSUPart PSU { get; set; }
+        public Components.RAMPart RAMKit { get; set; }
+        public Components.StoragePart Storage { get; set; }
+
         public Build(Components.CasePart _case, Components.CoolingPart cooling, Components.CPUPart cpu, Components.GPUPart gpu, Components.MotherboardPart motherboard, Components.PSUPart psu, Components.RAMPart ram, Components.StoragePart storage)
         {
             Case = _case;

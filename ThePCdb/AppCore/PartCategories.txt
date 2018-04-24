@@ -1,8 +1,0 @@
-﻿CPU
-Motherboard
-RAM
-Graphics Card
-Power Supply
-Case
-Cooling
-Storage

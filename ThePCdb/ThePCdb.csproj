@@ -100,6 +100,9 @@
     <Compile Include="BrowsePage.xaml.cs">
       <DependentUpon>BrowsePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BuildInfo.xaml.cs">
+      <DependentUpon>BuildInfo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Components\CasePart.cs" />
     <Compile Include="Components\CoolingPart.cs" />
     <Compile Include="Components\CPUPart.cs" />
@@ -133,7 +136,6 @@
     <None Include="ThePCdb_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AppCore\PartCategories.txt" />
     <Content Include="Assets\BrowseLogo.png" />
     <Content Include="Assets\BuildLogo.png" />
     <Content Include="Assets\BuildLogo2.png" />
@@ -156,6 +158,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="BrowsePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BuildInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
