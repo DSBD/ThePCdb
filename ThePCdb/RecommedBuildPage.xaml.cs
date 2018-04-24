@@ -72,6 +72,36 @@ namespace ThePCdb
                 case "$1,750.00":
                     sendBuild = AppCore.Warehouse.buildList[5];
                     break;
+                case "$2,000.00":
+                    sendBuild = AppCore.Warehouse.buildList[6];
+                    break;
+                case "$2,250.00":
+                    sendBuild = AppCore.Warehouse.buildList[7];
+                    break;
+                case "$2,500.00":
+                    sendBuild = AppCore.Warehouse.buildList[8];
+                    break;
+                case "$2,750.00":
+                    sendBuild = AppCore.Warehouse.buildList[9];
+                    break;
+                case "$3,000.00":
+                    sendBuild = AppCore.Warehouse.buildList[10];
+                    break;
+                case "$3,250.00":
+                    sendBuild = AppCore.Warehouse.buildList[11];
+                    break;
+                case "$3,500.00":
+                    sendBuild = AppCore.Warehouse.buildList[12];
+                    break;
+                case "$3,750.00":
+                    sendBuild = AppCore.Warehouse.buildList[13];
+                    break;
+                case "$4,000.00":
+                    sendBuild = AppCore.Warehouse.buildList[14];
+                    break;
+                case "$11,000.00":
+                    sendBuild = AppCore.Warehouse.buildList[15];
+                    break;
                 default:
                     break;
             }
