@@ -58,7 +58,7 @@ namespace ThePCdb.AppCore
             buildList.Add(generateBuildParts("631002", "742002", "112007", "342002", "212006", "412001", "524001", "831004"));
             buildList.Add(generateBuildParts("641002", "742002", "112007", "312001", "212005", "412001", "524001", "831004"));
             buildList.Add(generateBuildParts("641002", "742002", "112007", "312001", "212005", "412002", "524001", "831004"));
-            buildList.Add(generateBuildParts("641002", "742002", "112007", "312001", "212002", "413001", "524001", "831005"));
+            buildList.Add(generateBuildParts("641002", "742002", "112007", "312001", "212002", "413003", "524001", "831005"));
             buildList.Add(generateBuildParts("641002", "742002", "112005", "312001", "212005", "412002", "524001", "831004"));
             buildList.Add(generateBuildParts("641002", "742001", "112001", "311001", "212001", "424001", "528001", "831003"));
         }
@@ -386,11 +386,11 @@ namespace ThePCdb.AppCore
             PSUList.Add(new Components.PSUPart("Corsair SF Series SF450", 114.99, 0, "PSU", "412003", "ATX", 450, Components.PSUPart.EightyPlus.Gold));
             PSUList.Add(new Components.PSUPart("Corsair SF Series SF600", 179.99, 0, "PSU", "412004", "ATX", 600, Components.PSUPart.EightyPlus.Gold));
             PSUList.Add(new Components.PSUPart("Corsair HX Series HX750", 174.99, 0, "PSU", "413001", "ATX", 750, Components.PSUPart.EightyPlus.Platinum));
-            PSUList.Add(new Components.PSUPart("Corsair HX Series HX850", 214.99, 0, "PSU", "413001", "ATX", 850, Components.PSUPart.EightyPlus.Platinum));
-            PSUList.Add(new Components.PSUPart("Corsair HX Series HX1000", 264.99, 0, "PSU", "413001", "ATX", 1000, Components.PSUPart.EightyPlus.Platinum));
-            PSUList.Add(new Components.PSUPart("Corsair HX Series HX1200", 309.99, 0, "PSU", "413001", "ATX", 1200, Components.PSUPart.EightyPlus.Platinum));
-            PSUList.Add(new Components.PSUPart("Corsair AXi Series AX860i", 284.99, 0, "PSU", "413001", "ATX", 860, Components.PSUPart.EightyPlus.Platinum));
-            PSUList.Add(new Components.PSUPart("Corsair AXi Series HX1200i", 439.99, 0, "PSU", "413001", "ATX", 1200, Components.PSUPart.EightyPlus.Platinum));
+            PSUList.Add(new Components.PSUPart("Corsair HX Series HX850", 214.99, 0, "PSU", "413002", "ATX", 850, Components.PSUPart.EightyPlus.Platinum));
+            PSUList.Add(new Components.PSUPart("Corsair HX Series HX1000", 264.99, 0, "PSU", "413003", "ATX", 1000, Components.PSUPart.EightyPlus.Platinum));
+            PSUList.Add(new Components.PSUPart("Corsair HX Series HX1200", 309.99, 0, "PSU", "413004", "ATX", 1200, Components.PSUPart.EightyPlus.Platinum));
+            PSUList.Add(new Components.PSUPart("Corsair AXi Series AX860i", 284.99, 0, "PSU", "413005", "ATX", 860, Components.PSUPart.EightyPlus.Platinum));
+            PSUList.Add(new Components.PSUPart("Corsair AXi Series HX1200i", 439.99, 0, "PSU", "413007", "ATX", 1200, Components.PSUPart.EightyPlus.Platinum));
             PSUList.Add(new Components.PSUPart("Corsair Axi Series HAX1600", 639.99, 0, "PSU", "414001", "ATX", 1600, Components.PSUPart.EightyPlus.Titanium));
             PSUList.Add(new Components.PSUPart("Cooler Master MasterWatt550", 79.99, 0, "PSU", "421001", "SFX", 550, Components.PSUPart.EightyPlus.Bronze));
             PSUList.Add(new Components.PSUPart("Cooler Master MasterWatt650", 89.99, 0, "PSU", "421002", "SFX", 650, Components.PSUPart.EightyPlus.Bronze));
