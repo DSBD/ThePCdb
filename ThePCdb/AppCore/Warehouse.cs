@@ -19,6 +19,7 @@ namespace ThePCdb.AppCore
         static public List<Components.StoragePart> StorageList { get; set; }
         static public List<Components.PSUPart> PSUList { get; set; }
         static public List<Components.GPUPart> GPUList { get; set; }
+        static public List<Build> buildList { get; set; }
         static Warehouse()
         {
             CPUList = new List<Components.CPUPart>();
@@ -29,6 +30,8 @@ namespace ThePCdb.AppCore
             StorageList = new List<Components.StoragePart>();
             PSUList = new List<Components.PSUPart>();
             GPUList = new List<Components.GPUPart>();
+            buildList = new List<Build>();
+           
             LoadCPU();
             loadMotherboards();
             loadRAM();
@@ -37,7 +40,80 @@ namespace ThePCdb.AppCore
             loadStorage();
             loadPSU();
             loadGPU();
+            loadBuilds();
 
+        }
+        public static void loadBuilds()
+        {
+            buildList.Add(generateBuildParts("633001", "0", "123011","0", "213006", "421001", "511001", "821001"));
+            buildList.Add(generateBuildParts("633001", "0", "111007", "311101", "231006", "421001", "521003", "821001"));
+            buildList.Add(generateBuildParts("633001", "0", "111006", "317001", "231004", "421001", "521003", "821001"));
+            buildList.Add(generateBuildParts("621002", "711005", "111006", "331004", "231004", "421001", "511001", "821001"));
+
+        }
+
+        public static Build generateBuildParts(string CaseID, string CoolingID, string CPUID, string GPUID, string MotherboardID,string PSUID,string RAMID, string StorageID)
+        {
+            Build GeneratedBuild = new Build();
+            foreach(Components.CasePart Case in CaseList)
+            {
+                if (CaseID == Case.InternalPartID)
+                {
+                    GeneratedBuild.Case = Case;
+                }
+            }
+            foreach(Components.CoolingPart Cooling in CoolingList)
+            {
+                if (CoolingID == Cooling.InternalPartID)
+                {
+                    GeneratedBuild.Cooling = Cooling;
+                }
+            }
+            foreach(Components.CPUPart Cpu in CPUList)
+            {
+                if (CPUID == Cpu.InternalPartID)
+                {
+                    GeneratedBuild.CPU = Cpu;
+                }
+            }
+            foreach(Components.GPUPart GPU in GPUList)
+            {
+                if (GPUID == GPU.InternalPartID)
+                {
+                    GeneratedBuild.GPU = GPU;
+                }
+            }
+            foreach(Components.MotherboardPart Mther in MotherboardList)
+            {
+                if(MotherboardID == Mther.InternalPartID)
+                {
+                    GeneratedBuild.Motherboard = Mther;
+                }
+            }
+            foreach(Components.PSUPart PSU in PSUList)
+            {
+                if (PSUID == PSU.InternalPartID)
+                {
+                    GeneratedBuild.PSU = PSU;
+                }
+            }
+            foreach(Components.RAMPart RAM in RAMLIST)
+            {
+                if (RAMID == RAM.InternalPartID)
+                {
+                    GeneratedBuild.RAMKit = RAM;
+                }
+            }
+            foreach(Components.StoragePart Storage in StorageList)
+            {
+                if (StorageID == Storage.InternalPartID)
+                {
+                    GeneratedBuild.Storage = Storage;
+                }
+            }
+
+
+            return GeneratedBuild;
         }
         public static void LoadCPU()
         {
@@ -191,6 +267,7 @@ namespace ThePCdb.AppCore
         }
         public static void loadCooling()
         {
+            CoolingList.Add(new Components.CoolingPart("Stock Price", 0, 0, "Cooler", "0", "Air", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
             CoolingList.Add(new Components.CoolingPart("Cooler Master RR-HD92-28PK-R1", 57.99, 0, "Cooling", "711001", "Air", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4}));
             CoolingList.Add(new Components.CoolingPart("Cooler Master Hyper 212 EVO", 44.99, 0, "Cooling", "711002", "Air", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
             CoolingList.Add(new Components.CoolingPart("Cooler Master Hyper 212 LED", 49.99, 0, "Cooling", "711003", "Air", new List<Components.CPUPart.Socket> { Components.CPUPart.Socket.LGA1151, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Socket.AM4 }));
@@ -226,7 +303,7 @@ namespace ThePCdb.AppCore
             CaseList.Add(new Components.CasePart("NZXT Noctis 450", 189.99, 0, "Case", "621005", "ATX", 8, 7, true, true, true));
             CaseList.Add(new Components.CasePart("Fractal Design Meshify C - TG", 119.99, 0, "Case", "611005", "ATX", 5, 7, true, true, true));
             CaseList.Add(new Components.CasePart("Fractal Design Meshify C Black", 119.99, 0, "Case", "621001", "ATX", 5, 7, true, true, true));
-            CaseList.Add(new Components.CasePart("Fractal Design Focis G", 74.99, 0, "Case", "621002", "ATX", 3, 7, true, true, true));
+            CaseList.Add(new Components.CasePart("Fractal Design Focus G", 74.99, 0, "Case", "621002", "ATX", 3, 7, true, true, true));
             CaseList.Add(new Components.CasePart("Fractal Design Define R6 Black", 199.99, 0, "Case", "621003", "EATX", 8, 9, true, true, true));
             CaseList.Add(new Components.CasePart("Fractal Design Define R6 Blackout", 199.99, 0, "Case", "621004", "EATX", 8, 9, true, true, true));
             CaseList.Add(new Components.CasePart("Cooler Master MasterBox Lite 5 RGB", 89.99, 0, "Case", "631001", "ATX", 3, 7, true, true, true));
@@ -325,6 +402,7 @@ namespace ThePCdb.AppCore
         }
         public static void loadGPU()
         {
+            GPUList.Add(new Components.GPUPart("Intergraded", 0, 0, "GPU", "0", 100, 100, 0, 0));
             GPUList.Add(new Components.GPUPart("Asus GeForce GT 1030 2GB", 162.99, 0, "GPU", "310001", 1278, 1531, 2, 245));
             GPUList.Add(new Components.GPUPart("Asus ROG GeForce GTX 1080Ti Strix", 1419.99, 0, "GPU", "311001", 1597, 1708, 11, 5655));
             GPUList.Add(new Components.GPUPart("Asus ROG Strix Radeon RX 560", 209.99, 0, "GPU", "311101", 1149, 1197, 4, 907));
