@@ -22,14 +22,61 @@ namespace ThePCdb
     /// </summary>
     public sealed partial class RecommedBuildPage : Page
     {
+        AppCore.Build sendBuild;
+
         public RecommedBuildPage()
         {
             this.InitializeComponent();
+            ReccomendedBox.Items.Add("$650.00");
+            ReccomendedBox.Items.Add("$950.00");
+            ReccomendedBox.Items.Add("$1,000.00");
+            ReccomendedBox.Items.Add("$1,250.00");
+            ReccomendedBox.Items.Add("$1,500.00");
+            ReccomendedBox.Items.Add("$1,750.00");
+            ReccomendedBox.Items.Add("$2,000.00");
+            ReccomendedBox.Items.Add("$2,250.00");
+            ReccomendedBox.Items.Add("$2,500.00");
+            ReccomendedBox.Items.Add("$2,750.00");
+            ReccomendedBox.Items.Add("$3,000.00");
+            ReccomendedBox.Items.Add("$3,250.00");
+            ReccomendedBox.Items.Add("$3,500.00");
+            ReccomendedBox.Items.Add("$3,750.00");
+            ReccomendedBox.Items.Add("$4,000.00");
+            ReccomendedBox.Items.Add("$11,000.00");
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(HomeScreen));
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            switch (ReccomendedBox.SelectedItem)
+            {
+                case "$650.00":
+                    sendBuild = AppCore.Warehouse.buildList[0];
+                    break;
+                case "$950.00":
+                    sendBuild = AppCore.Warehouse.buildList[1];
+                    break;
+                case "$1,000.00":
+                    sendBuild = AppCore.Warehouse.buildList[2];
+                    break;
+                case "$1,250.00":
+                    sendBuild = AppCore.Warehouse.buildList[3];
+                    break;
+                case "$1,500.00":
+                    sendBuild = AppCore.Warehouse.buildList[4];
+                    break;
+                case "$1,750.00":
+                    sendBuild = AppCore.Warehouse.buildList[5];
+                    break;
+                default:
+                    break;
+            }
+
+            this.Frame.Navigate(typeof(BuildInfo), sendBuild);
         }
     }
 }
