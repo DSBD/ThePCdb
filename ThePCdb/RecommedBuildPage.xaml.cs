@@ -25,6 +25,22 @@ namespace ThePCdb
         public RecommedBuildPage()
         {
             this.InitializeComponent();
+            ReccomendedBox.Items.Add("$650.00");
+            ReccomendedBox.Items.Add("$950.00");
+            ReccomendedBox.Items.Add("$1,000.00");
+            ReccomendedBox.Items.Add("$1,250.00");
+            ReccomendedBox.Items.Add("$1,500.00");
+            ReccomendedBox.Items.Add("$1,750.00");
+            ReccomendedBox.Items.Add("$2,000.00");
+            ReccomendedBox.Items.Add("$2,250.00");
+            ReccomendedBox.Items.Add("$2,500.00");
+            ReccomendedBox.Items.Add("$2,750.00");
+            ReccomendedBox.Items.Add("$3,000.00");
+            ReccomendedBox.Items.Add("$3,250.00");
+            ReccomendedBox.Items.Add("$3,500.00");
+            ReccomendedBox.Items.Add("$3,750.00");
+            ReccomendedBox.Items.Add("$4,000.00");
+            ReccomendedBox.Items.Add("$11,000.00");
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
