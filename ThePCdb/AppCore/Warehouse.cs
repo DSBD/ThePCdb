@@ -185,7 +185,7 @@ namespace ThePCdb.AppCore
             MotherboardList.Add(new Components.MotherboardPart("Gigabyte AORUS Gaming 7", 596.99, 0, "Motherboard", "232001", "ATX", 8, 5, true, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Chipset.X299));
             MotherboardList.Add(new Components.MotherboardPart("Asus WS X299 PRO/SE", 514.99, 0, "Motherboard", "21200", "EATX", 8, 4, true, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Chipset.X299));
             MotherboardList.Add(new Components.MotherboardPart("Asus ROG Strix X299-XE Gaming", 474.99, 0, "Motherboard", "212002", "ATX", 8, 4, true, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Chipset.X299));
-            MotherboardList.Add(new Components.MotherboardPart("Asus ROG Strix X299-E Gaming", 439.99, 0, "Motherboard", "212002", "ATX", 8, 3, true, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Chipset.X299));
+            MotherboardList.Add(new Components.MotherboardPart("Asus ROG Strix X299-E Gaming", 439.99, 0, "Motherboard", "212005", "ATX", 8, 3, true, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Chipset.X299));
             MotherboardList.Add(new Components.MotherboardPart("Asus Prime X299-A", 394.99, 0, "Motherboard", "212006", "ATX", 8, 3, true, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Chipset.X299));
             MotherboardList.Add(new Components.MotherboardPart("Asus TUF X299 MARK 2", 334.99, 0, "Motherboard", "212007", "ATX", 8, 3, true, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Chipset.X299));
             MotherboardList.Add(new Components.MotherboardPart("MSI X299 SLI Plus", 312.99, 0, "Motherboard", "222003", "ATX", 8, 4, true, Components.CPUPart.Socket.LGA2066, Components.CPUPart.Chipset.X299));
