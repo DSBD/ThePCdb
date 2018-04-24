@@ -66,11 +66,13 @@ namespace ThePCdb.AppCore
         public static Build generateBuildParts(string CaseID, string CoolingID, string CPUID, string GPUID, string MotherboardID,string PSUID,string RAMID, string StorageID)
         {
             Build GeneratedBuild = new Build();
+            GeneratedBuild.Price = 0;
             foreach(Components.CasePart Case in CaseList)
             {
                 if (CaseID == Case.InternalPartID)
                 {
                     GeneratedBuild.Case = Case;
+                    GeneratedBuild.Price += Case.Price;
                 }
             }
             foreach(Components.CoolingPart Cooling in CoolingList)
@@ -78,6 +80,7 @@ namespace ThePCdb.AppCore
                 if (CoolingID == Cooling.InternalPartID)
                 {
                     GeneratedBuild.Cooling = Cooling;
+                    GeneratedBuild.Price += Cooling.Price;
                 }
             }
             foreach(Components.CPUPart Cpu in CPUList)
@@ -85,6 +88,7 @@ namespace ThePCdb.AppCore
                 if (CPUID == Cpu.InternalPartID)
                 {
                     GeneratedBuild.CPU = Cpu;
+                    GeneratedBuild.Price += Cpu.Price;
                 }
             }
             foreach(Components.GPUPart GPU in GPUList)
@@ -92,6 +96,7 @@ namespace ThePCdb.AppCore
                 if (GPUID == GPU.InternalPartID)
                 {
                     GeneratedBuild.GPU = GPU;
+                    GeneratedBuild.Price += GPU.Price;
                 }
             }
             foreach(Components.MotherboardPart Mther in MotherboardList)
@@ -99,6 +104,7 @@ namespace ThePCdb.AppCore
                 if(MotherboardID == Mther.InternalPartID)
                 {
                     GeneratedBuild.Motherboard = Mther;
+                    GeneratedBuild.Price += Mther.Price;
                 }
             }
             foreach(Components.PSUPart PSU in PSUList)
@@ -106,6 +112,7 @@ namespace ThePCdb.AppCore
                 if (PSUID == PSU.InternalPartID)
                 {
                     GeneratedBuild.PSU = PSU;
+                    GeneratedBuild.Price += PSU.Price;
                 }
             }
             foreach(Components.RAMPart RAM in RAMLIST)
@@ -113,6 +120,7 @@ namespace ThePCdb.AppCore
                 if (RAMID == RAM.InternalPartID)
                 {
                     GeneratedBuild.RAMKit = RAM;
+                    GeneratedBuild.Price += RAM.Price;
                 }
             }
             foreach(Components.StoragePart Storage in StorageList)
@@ -120,6 +128,7 @@ namespace ThePCdb.AppCore
                 if (StorageID == Storage.InternalPartID)
                 {
                     GeneratedBuild.Storage = Storage;
+                    GeneratedBuild.Price += Storage.Price;
                 }
             }
 
