@@ -40,8 +40,6 @@ namespace ThePCdb
 
             displayBuild = (AppCore.Build)e.Parameter;
 
-            double totalCost = displayBuild.CPU.Price + displayBuild.Motherboard.Price + displayBuild.GPU.Price + displayBuild.RAMKit.Price + displayBuild.PSU.Price + displayBuild.Case.Price + displayBuild.Storage.Price + displayBuild.Cooling.Price;
-
             CPUSlot.Text = $"CPU: {displayBuild.CPU.Name}";
             MotherboardSlot.Text = $"Motherboard: {displayBuild.Motherboard.Name}";
             GPUSlot.Text = $"GPU: {displayBuild.GPU.Name}";
@@ -50,7 +48,7 @@ namespace ThePCdb
             CaseSlot.Text = $"Case: {displayBuild.Case.Name}";
             StorageSlot.Text = $"Storage: {displayBuild.Storage.Name}";
             CoolingSlot.Text = $"Cooling: {displayBuild.Cooling.Name}";
-            PriceSlot.Text = $"${Math.Round(totalCost, 2)}";
+            PriceSlot.Text = $"Total Cost: ${displayBuild.Price}";
         }
     }
 }

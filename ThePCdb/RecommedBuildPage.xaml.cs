@@ -22,6 +22,8 @@ namespace ThePCdb
     /// </summary>
     public sealed partial class RecommedBuildPage : Page
     {
+        AppCore.Build sendBuild;
+
         public RecommedBuildPage()
         {
             this.InitializeComponent();
@@ -50,7 +52,16 @@ namespace ThePCdb
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(BuildInfo));
+            switch (ReccomendedBox.SelectedItem)
+            {
+                case "$650.00":
+                    sendBuild = AppCore.Warehouse.buildList[0];
+                    break;
+                default:
+                    break;
+            }
+
+            this.Frame.Navigate(typeof(BuildInfo), sendBuild);
         }
     }
 }
