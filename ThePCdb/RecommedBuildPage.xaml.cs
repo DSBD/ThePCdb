@@ -31,5 +31,10 @@ namespace ThePCdb
         {
             this.Frame.Navigate(typeof(HomeScreen));
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(BuildInfo));
+        }
     }
 }

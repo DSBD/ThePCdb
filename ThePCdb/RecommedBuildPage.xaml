@@ -25,14 +25,9 @@
             
             <TextBlock Grid.Row="0" Foreground="White" FontSize="50" Text="Recommend Build" HorizontalAlignment="Center"/>
             <StackPanel Grid.Row="1" Margin="20">
-                <TextBlock x:Name="txt_MinBudget" Text="  Enter Min. Budget:" Foreground="White" FontFamily="Consolas" FontSize="24"/>
-                <TextBox FontFamily="Consolas" FontSize="24" Width="400" Margin="20"/>
+                <ComboBox x:Name="ReccomendedBox" Header="Select a Price" Foreground="White" HorizontalAlignment="Center" Width="300" FontSize="24"/>
             </StackPanel>
-            <StackPanel Grid.Row="2" Margin="20">
-                <TextBlock x:Name="txt_MaxBudget" Text="  Enter Max Budget:" Foreground="White" FontFamily="Consolas" FontSize="24"/>
-                <TextBox FontFamily="Consolas" FontSize="24" Width="400" Margin="20"/>
-            </StackPanel>
-            <Button Grid.Row="3" Content="Find a Build!" Foreground="White" FontSize="24" Width="250" Height="100" Margin="0,25,0,0" HorizontalAlignment="Center"/>
+            <Button Grid.Row="3" Content="Find a Build!" Foreground="White" FontSize="24" Width="250" Height="100" Margin="0,25,0,0" HorizontalAlignment="Center" Click="Button_Click_1"/>
             <Button Grid.Row="4" Content="Back" Foreground="White" FontSize="24" Width="250" Height="100" Margin="0,25,0,0" HorizontalAlignment="Center" Click="Button_Click"/>
         </Grid>
     </Grid>
